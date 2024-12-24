@@ -1,0 +1,35 @@
+1.CNN (Convolutional Neural Networks)
+
+*CNNs are a type of deep learning algorithm that specializes in pattern recognition.
+*CNNs use filters to identify patterns in images.
+*Filters are small matrices that slide over the image and compare patterns.
+*Multiple filters are used to detect different features in the image.
+*The output of the filters is combined to form a higher-level representation of the image.
+
+
+2.DNN (Deep Neural Networks)
+
+*Neural networks are made up of interconnected nodes, or neurons, that process information.
+*The nodes in the input layer receive input data, and the nodes in the output layer produce the output.
+*The nodes in the hidden layers between the input and output layers perform intermediate computations.
+*The weights and biases associated with each node determine how the node responds to input signals.
+*The network learns by adjusting the weights and biases to minimize the error between the predicted output and the actual output.
+*Gradient descent is an algorithm that is used to update the weights and biases.
+*Backpropagation is a technique that is used to calculate the gradient of the error function with respect to the weights and biases.
+*The network is trained by iteratively feeding it training data and updating the weights and biases using gradient descent and backpropagation.
+*Once the network is trained, it can be used to make predictions on new data.
+
+3.Model Checkpoints
+Model checkpoints are a crucial mechanism to save the intermediate state of a model's training process.
+Importance of model checkpoints:
+*Saves model state during training.
+*Resumes training after interruptions.
+*Experiments with hyperparameters.
+*Early stopping and ensemble methods.
+
+4.Transfer Learning
+
+*Transfer learning is the improvement of learning in a new task by transferring knowledge from a related task that has already been learned.
+*Analogy: Learning to ride a motorcycle is easier for someone who already knows how to ride a bicycle because they can transfer skills like balance and braking.
+*Machine learning context: Transfer learning uses pre-trained models to learn new tasks. For example, a model trained to recognize dogs can be adapted to recognize cats.
+

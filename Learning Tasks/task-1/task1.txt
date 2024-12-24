@@ -1,0 +1,58 @@
+Learning Task 1
+
+1.AI vocabulary and components:
+
+Artificial Intelligence (AI): Machines that mimic human intelligence. They can perform tasks like learning, reasoning, and problem-solving.
+Machine Learning (ML): A subset of AI. It allows computers to learn and improve through data. 
+Deep Learning (DL): A subset of ML that uses neural networks with many layers.
+Data Science: Field focused on extracting insights from large amount of data.
+Natural Language Processing (NLP): AI's ability to understand and process human language.
+Neural Networks (NN): Layers of interconnected nodes (neurons) mimicking the human brain.
+Convolutional Neural Network (CNN): A type of artificial neural network that's used to process and recognize patterns in images and videos.
+Deep Neural Network (DNN): A type of machine learning algorithm that uses multiple hidden layers to process complex information.
+Recurrent Neural Networks (RNN): Designed for sequential data.
+Core components of an ANN: nodes (neurons), layers, connections, activation functions
+
+2.Model architecture and components
+
+Input Layer: Receives data for model processing.
+Hidden Layers: Extracts features and learns patterns.
+Output Layer: Produces predictions or classifications.
+Weights and Biases: Parameters adjusted during training.
+Activation Functions: Introduces non-linearity to improve learning.
+
+3.Training and Inference 
+
+Training: Ai model learns patterns from data. It does so by adjusting the weights and biases. 
+The goal is to minimise the error in the output.
+Inference: The process where the trained model is used to make predictions on new, unseen data.
+
+4.Context Window
+
+The context window is a setting that controls how much surrounding information the AI model considers when generating a response.
+
+5.How to write a good prompt:
+
+Clear instructions
+adopt a persona 
+Specify a format
+avoid leading the answer
+Limit the scope
+
+6.Hardware and compute requirements:
+
+High-Performance GPUs: Essential for parallel processing and deep learning tasks.
+Large RAM: Handles big datasets and memory-intensive operations efficiently.
+Fast Storage: SSDs enable quick data access during training.
+Powerful CPUs: Supports preprocessing and lightweight AI inference tasks.
+Scalable Cloud Services: Offers flexible resources for large-scale AI workloads.
+Energy Efficiency: Optimized hardware reduces power consumption in AI computations.
+
+7.Operational modes and their application
+
+Training Mode: Models learn patterns by optimizing weights using labeled or unlabeled data.
+Inference Mode: Models generate predictions or outputs using pre-trained weights and provided inputs.
+Fine-Tuning Mode: Pre-trained models adapt to specific tasks with additional task-specific data.
+Batch Processing: Processes large datasets efficiently in batches for training or inference.
+Real-Time Mode: Provides immediate predictions for applications like chatbots, recommendation systems, or self-driving cars.
+

@@ -1,0 +1,7 @@
+# Release configuration
+git:
+  requireCleanWorkingDir: false
+  commitMessage: "chore: release v${version}"
+
+gitlab:
+  release: true

@@ -1,0 +1,88 @@
+# Define Stages
+stages:
+  - code-quality
+  - build
+  - test
+  - release
+  - deploy
+
+# Base Docker image, this will be the base docker inside which the steps will run
+image: alpine:3.13
+
+# Commands to run before the actual build step
+# Ideally put dependency installations here
+before_script:
+  - apk update
+  - apk upgrade
+  - apk --update add gcc g++ build-base cmake make bash libstdc++ cppcheck py-pip gtest-dev flawfinder nodejs npm git
+
+check_code_quality:
+  stage: code-quality
+  script:
+    - flawfinder example/src/ | tee code_quality_report.txt
+  artifacts:
+    paths:
+      - code_quality_report.txt
+
+# Commands to run to build the program in the git repo
+build-job:
+  stage: build
+  script:
+    - cd example
+    - mkdir build && cd build
+    - cmake ../
+    - make
+  artifacts:
+    paths:
+      - example/build
+
+# Stage Test
+test-job:
+  stage: test
+  script:
+    - cd example/build
+    #    - cmake ../
+    #    - make
+    - ./problem1_test --gtest_output="xml:./problem1_test-report.xml"
+  dependencies:
+    - build-job
+  artifacts:
+    reports:
+      junit: example/build/problem1_test-report.xml
+
+# Stage Release
+release-job:
+  stage: release
+  except:
+    variables:
+      - $CI_USER_NAME == null
+      - $CI_USER_EMAIL == null
+      - $CI_GITLAB_TOKEN == null
+      - $CI_SSH_PRIVATE_KEY == null
+
+  before_script:
+    - apk update
+    - apk upgrade 
+    - apk add git nodejs npm openssh
+    - eval `ssh-agent -s`
+    - echo "${CI_SSH_PRIVATE_KEY}" | tr -d '\r' | ssh-add - > /dev/null # add ssh key
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - git checkout $CI_BUILD_REF_NAME
+    - git remote set-url origin "git@gitlab.iotiot.in:$CI_PROJECT_PATH.git"
+    - git config --global user.name "${CI_USER_NAME}"
+    - git config --global user.email "${CI_USER_EMAIL}"
+  script:
+    - GITLAB_TOKEN="${CI_GITLAB_TOKEN}" npx release-it@12.4.3 --ci --config .release-it.yml
+  dependencies:
+    - build-job
+
+# Stage Deploy
+deploy-job:
+  stage: deploy
+  script:
+    - cd example/build
+    - ./problem1
+  dependencies:
+    - build-job
