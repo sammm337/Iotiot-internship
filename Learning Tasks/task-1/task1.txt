@@ -56,4 +56,4 @@ Fine-Tuning Mode: Pre-trained models adapt to specific tasks with additional tas
 Batch Processing: Processes large datasets efficiently in batches for training or inference.
 Real-Time Mode: Provides immediate predictions for applications like chatbots, recommendation systems, or self-driving cars.
 
-changes 
+
