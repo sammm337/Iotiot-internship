@@ -1,0 +1,40 @@
+1.AI vocabulary and components:
+Artificial Intelligence (AI): Machines that mimic human intelligence.
+Deep Learning (DL): A subset of ML that uses neural networks with many layers.
+Natural Language Processing (NLP): AI's ability to understand and process human language.
+Neural Networks (NN): Layers of interconnected nodes (neurons) mimicking the human brain.
+LLM: AI model trained on huge amount of text data to understand and generate human language.
+2.Model Architecture and Components
+Input Layer: Accepts raw data for model to process.
+Hidden Layers: Performs calculations to identify patterns in data.
+Output Layer: Produces final prediction.
+3.Training and Inference
+Training: Ai model learns patterns from data. It does so by adjusting the weights and biases.
+The goal is to minimise the error in the output.
+Inference: The process where the trained model is used to make predictions on new, unseen data.
+4.Context Window
+The context window is a setting that controls how much surrounding information the AI model considers when generating a response.
+5.How to write a good prompt:
+Clear instructions,
+adopt a persona,
+Specify a format,
+avoid leading the answer,
+Limit the scope
+6.Hardware and compute requirements:
+High Performance GPUs: Essential for parallel processing and deep learning tasks.
+Large RAM: Handles big datasets and memory intensive operations efficiently.
+Fast Storage: SSDs enable quick data access during training.
+Powerful CPUs: Supports preprocessing and lightweight AI inference tasks.
+Scalable Cloud Services: Offers flexible resources for large-scale AI workloads.
+7.Operations modes
+Training mode: Model learns patterns from input data.
+Evaluation mode: Model uses it's knowledge to make predictions for new data.
+Fine tuning mode: Model is trained on a smaller, more specific dataset to improve performance for a specific task.
+Transfer learning mode: Model uses knowledge from one task for another related task.
+8.CNN and DNN
+(CNN): A type of artificial neural network that's used to process and recognize patterns in images and videos.
+(DNN): A type of machine learning algorithm that uses multiple hidden layers to process complex information.
+9.Model Checkpoints
+Model checkpoints are a crucial mechanism to save the intermediate state of a model's training process.
+10.Transfer Learning
+Technique in which knowledge gained through one task or dataset is used to improve model performance on another related task or different dataset.
