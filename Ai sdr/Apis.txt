@@ -1,0 +1,14 @@
+### Pipl API Flow
+- **Use**: Gives personal data of a user
+- **Endpoint**: `https://api.pipl.com/search/`
+- **Method**: `GET`
+- **Query**: Use `name + phone`, `name + email`, `email + phone`, or a `person` object with `key=YOURKEY`.  
+  Example:  
+  `https://api.pipl.com/search/?email=clark.kent@example.com&key=YOURKEY`
+- **Response**: Returns name, gender, education, vehicles, social profiles, etc., if matched.  
+### Google Analytics API Flow
+- **Use**: Analyze user behavior (e.g., sessions, pageviews, bounce rates).  
+Generate reports for web traffic and marketing campaigns.
+- **Endpoint**: `https://analyticsreporting.googleapis.com/v4/reports:batchGet`
+- **Method**: `POST`
+- **Query**: Use metrics (e.g., `ga:sessions`, `ga:pageviews`) and dimensions (e.g., `ga:date`, `ga:country`) in the request body with an authorized `access_token`.  
