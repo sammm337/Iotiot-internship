@@ -1,0 +1,9 @@
+{
+    "origin": "New York",
+    "destination": "Los Angeles",
+    "departure_date": "2025-02-15",
+    "return_date": "2025-02-20",
+    "travel_class": "Economy",
+    "passenger_count": 1
+  }
+  
