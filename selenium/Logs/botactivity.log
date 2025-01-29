@@ -26,3 +26,57 @@ Stacktrace:
 17  libsystem_pthread.dylib             0x000000019e591d34 thread_start + 8
 
 2025-01-24 23:35:27,484 - INFO - LinkedIn post bot completed.
+2025-01-29 13:28:38,585 - INFO - Starting all bots...
+2025-01-29 13:28:41,927 - INFO - Navigating to LinkedIn login page.
+2025-01-29 13:28:43,259 - INFO - Logging in.
+2025-01-29 13:28:52,254 - INFO - Starting post for Task ID: task1
+2025-01-29 13:29:01,563 - ERROR - Error posting Task ID task1: 'NoneType' object has no attribute 'is_displayed'
+2025-01-29 13:29:01,564 - INFO - Starting post for Task ID: task2
+2025-01-29 13:29:01,565 - ERROR - Error posting Task ID task2: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x0000000102c6f0d4 cxxbridge1$str$ptr + 2600792
+1   chromedriver                        0x0000000102c679f0 cxxbridge1$str$ptr + 2570356
+2   chromedriver                        0x00000001028083d8 cxxbridge1$string$len + 89376
+3   chromedriver                        0x00000001027e387c chromedriver + 129148
+4   chromedriver                        0x0000000102873dd0 cxxbridge1$string$len + 530200
+5   chromedriver                        0x0000000102886cb4 cxxbridge1$string$len + 607740
+6   chromedriver                        0x000000010284134c cxxbridge1$string$len + 322708
+7   chromedriver                        0x0000000102841f94 cxxbridge1$string$len + 325852
+8   chromedriver                        0x0000000102c3a238 cxxbridge1$str$ptr + 2384060
+9   chromedriver                        0x0000000102c3d550 cxxbridge1$str$ptr + 2397140
+10  chromedriver                        0x0000000102c20b9c cxxbridge1$str$ptr + 2279968
+11  chromedriver                        0x0000000102c3de10 cxxbridge1$str$ptr + 2399380
+12  chromedriver                        0x0000000102c126a4 cxxbridge1$str$ptr + 2221352
+13  chromedriver                        0x0000000102c587d8 cxxbridge1$str$ptr + 2508380
+14  chromedriver                        0x0000000102c58954 cxxbridge1$str$ptr + 2508760
+15  chromedriver                        0x0000000102c67664 cxxbridge1$str$ptr + 2569448
+16  libsystem_pthread.dylib             0x000000019e596f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019e591d34 thread_start + 8
+
+2025-01-29 13:29:01,566 - INFO - Starting post for Task ID: task3
+2025-01-29 13:29:01,566 - ERROR - Error posting Task ID task3: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x0000000102c6f0d4 cxxbridge1$str$ptr + 2600792
+1   chromedriver                        0x0000000102c679f0 cxxbridge1$str$ptr + 2570356
+2   chromedriver                        0x00000001028083d8 cxxbridge1$string$len + 89376
+3   chromedriver                        0x00000001027e387c chromedriver + 129148
+4   chromedriver                        0x0000000102873dd0 cxxbridge1$string$len + 530200
+5   chromedriver                        0x0000000102886cb4 cxxbridge1$string$len + 607740
+6   chromedriver                        0x000000010284134c cxxbridge1$string$len + 322708
+7   chromedriver                        0x0000000102841f94 cxxbridge1$string$len + 325852
+8   chromedriver                        0x0000000102c3a238 cxxbridge1$str$ptr + 2384060
+9   chromedriver                        0x0000000102c3d550 cxxbridge1$str$ptr + 2397140
+10  chromedriver                        0x0000000102c20b9c cxxbridge1$str$ptr + 2279968
+11  chromedriver                        0x0000000102c3de10 cxxbridge1$str$ptr + 2399380
+12  chromedriver                        0x0000000102c126a4 cxxbridge1$str$ptr + 2221352
+13  chromedriver                        0x0000000102c587d8 cxxbridge1$str$ptr + 2508380
+14  chromedriver                        0x0000000102c58954 cxxbridge1$str$ptr + 2508760
+15  chromedriver                        0x0000000102c67664 cxxbridge1$str$ptr + 2569448
+16  libsystem_pthread.dylib             0x000000019e596f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019e591d34 thread_start + 8
+
+2025-01-29 13:29:01,796 - INFO - LinkedIn post bot completed.
