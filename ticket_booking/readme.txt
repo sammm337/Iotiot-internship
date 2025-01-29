@@ -1,0 +1,2 @@
+The main challenges with login automation include dealing with dynamic web elements that change on each session and handling two-factor authentication (2FA) that requires manual input of verification codes.
+Additionally, CAPTCHA systems designed to block bots can disrupt automation, often requiring human intervention or third-party solvers to bypass.
