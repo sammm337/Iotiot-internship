@@ -58,12 +58,17 @@ def search_tickets():
 
         # Handle Departure Date Selection
         page.click('//*[@id="top-banner"]/div[2]/div/div/div/div/div[2]/div[1]/div[3]/label/span')
-        time.sleep(5)  # Wait for the calendar to load
+        time.sleep(3)  # Wait for the calendar to load
 
-# Find the date element based on the date text (e.g., '14' for the 14th)
-        departure_date = inputs['departure_date']  # For example: '14'
-        # date_element = page.locator(f'//div[@class="dateInnerCell"]//p[text()="{departure_date}"]')
-        # date_element.click()
+        departure_date = inputs['departure_date']  # Example: 'Feb 24 2025'
+          # Format: 'Mon Feb 24 2025'
+
+# Locate the date element based on aria-label
+        date_element = page.locator(f'//div[@class="DayPicker-Day" and @aria-label="{departure_date}"]')
+
+# Wait for the date element to be visible and clickable
+        date_element.wait_for(state='visible', timeout=10000)  # Wait for 10 seconds for visibility
+        date_element.click()
         logging.info(f"Selected departure date: {departure_date}")
        
 # Handle Return Date Selection
@@ -71,9 +76,13 @@ def search_tickets():
         time.sleep(5)  # Wait for the calendar to load
 
 # Find the return date element based on the date text (e.g., '20' for the 20th)
-        return_date = inputs['return_date']  # For example: '20'
-        # date_element = page.locator(f'//div[@class="dateInnerCell"]//p[text()="{return_date}"]')
-        # date_element.click()
+        return_date = inputs['return_date']  # Example: 'Feb 20 2025'
+         # Format: 'Mon Feb 20 2025'
+        date_element = page.locator(f'//div[@class="DayPicker-Day" and @aria-label="{return_date}"]')
+
+# Wait for the date element to be visible and clickable
+        date_element.wait_for(state='visible', timeout=10000)  # Wait for 10 seconds for visibility
+        date_element.click()
         logging.info(f"Selected return date: {return_date}")
 
 
