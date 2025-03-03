@@ -1,0 +1,229 @@
+2025-02-27 15:55:23,404 - [test] - INFO - Starting resume information extraction...
+2025-02-27 15:55:23,410 - [test] - INFO - Extracting text from PDF: C:\Users\hplap\OneDrive\Desktop\Code\Resume Experience Verification\HR_Verification\Input\candidate_resume.pdf
+2025-02-27 15:55:24,111 - [test] - INFO - Found LinkedIn URL: https://linkedin.com/in/prasad-gujar
+2025-02-27 15:55:24,187 - [test] - INFO - Extracted 2 experience entries
+2025-02-27 15:55:24,217 - [test] - INFO - Data successfully saved to C:\Users\hplap\OneDrive\Desktop\Code\Resume Experience Verification\HR_Verification\Output\output.json
+2025-02-27 18:31:36,402 - [scrap_img1] - INFO - Starting image scraping process...
+2025-02-27 18:31:36,404 - [scrap_img1] - INFO - Processing linkedin_screenshot4.png...
+2025-02-27 18:31:38,112 - [scrap_img1] - INFO - Cleaning OCR text...
+2025-02-27 18:31:38,114 - [scrap_img1] - INFO - Extracting experience section...
+2025-02-27 18:31:38,115 - [scrap_img1] - INFO - Successfully found Experience section
+2025-02-27 18:31:38,115 - [scrap_img1] - INFO - 
+Found Experience Section:
+2025-02-27 18:31:38,115 - [scrap_img1] - INFO - --------------------------------------------------
+2025-02-27 18:31:38,116 - [scrap_img1] - INFO - Web Developer mene loners Website Vikreta - Internship 9,789,Jun 2024 - Sep 2024 - 4 mos oR Pune, Maharashtra, India follow this page Full-Stack Development, Sanity Testing and +9 skills completion _certificatejpg
+2025-02-27 18:31:38,117 - [scrap_img1] - INFO - --------------------------------------------------
+2025-02-27 18:31:38,117 - [scrap_img1] - INFO - Parsing experience block
+2025-02-27 18:31:38,121 - [scrap_img1] - INFO - Successfully saved experiences to C:\Users\hplap\OneDrive\Desktop\Code\Resume Experience Verification\HR_Verification\Output\experience.json
+2025-02-27 18:32:47,725 - [generate_hr_questions] - INFO - LinkedIn Experience: [
+  {
+    "Role": "Web Developer",
+    "Company": "Website Vikreta",
+    "Duration": "Jun 2024 - Sep 2024 - 4 mos",
+    "Location": "Pune, Maharashtra",
+    "Responsibilities": [
+      "Skills: Sanity Testing and +9 skills"
+    ]
+  }
+]
+2025-02-27 18:32:47,728 - [generate_hr_questions] - INFO - Resume Experience: [
+  {
+    "Role": "Web Developer",
+    "Duration": "July 2024 � October 2024",
+    "Company": "Webite Vikreta",
+    "Location": "Pune, Maharashtra",
+    "Responsibilities": [
+      "Worked on Sanity Studio to create dynamic web pages, enhancing the platform�s flexibility and allowing real-time content updates.",
+      "Optimized multiple web pages, significantly improving platform functionality and delivering a seamless user experience through responsive design and efficient coding practices.",
+      "Recognized as the top-performing intern for July 2024, highlighting exceptional performance and contributions to the team. Technical Team Member - Credenz"
+    ]
+  },
+  {
+    "Role": "Technical Team Member",
+    "Duration": "November 2023 � January 2024",
+    "Company": "IEEE PICT Student Branch (PISB)",
+    "Location": "Pune, Maharashtra",
+    "Responsibilities": [
+      "Lead the technical team for Credenz, (flagship technical event of PICT-IEEE).",
+      "Integrated key features for �Clash,� an MCQ platform, enhancing functionality and user experience."
+    ]
+  }
+]
+2025-02-27 18:32:47,741 - [generate_hr_questions] - INFO - Model: gemini-2.0-flash
+2025-02-27 18:32:47,742 - [generate_hr_questions] - INFO - Max Tokens: 2048
+2025-02-27 18:32:47,742 - [generate_hr_questions] - INFO - Temperature: 0.7
+2025-02-27 18:32:47,743 - [generate_hr_questions] - INFO - Generating questions...
+2025-02-27 18:34:21,672 - [generate_hr_questions] - INFO - [SUCCESS] Successfully loaded experience files
+2025-02-27 18:34:21,673 - [generate_hr_questions] - INFO - LinkedIn Experience: [
+  {
+    "Role": "Web Developer",
+    "Company": "Website Vikreta",
+    "Duration": "Jun 2024 - Sep 2024 - 4 mos",
+    "Location": "Pune, Maharashtra",
+    "Responsibilities": [
+      "Skills: Sanity Testing and +9 skills"
+    ]
+  }
+]
+2025-02-27 18:34:21,675 - [generate_hr_questions] - INFO - Resume Experience: [
+  {
+    "Role": "Web Developer",
+    "Duration": "July 2024 – October 2024",
+    "Company": "Webite Vikreta",
+    "Location": "Pune, Maharashtra",
+    "Responsibilities": [
+      "Worked on Sanity Studio to create dynamic web pages, enhancing the platform’s flexibility and allowing real-time content updates.",
+      "Optimized multiple web pages, significantly improving platform functionality and delivering a seamless user experience through responsive design and efficient coding practices.",
+      "Recognized as the top-performing intern for July 2024, highlighting exceptional performance and contributions to the team. Technical Team Member - Credenz"
+    ]
+  },
+  {
+    "Role": "Technical Team Member",
+    "Duration": "November 2023 – January 2024",
+    "Company": "IEEE PICT Student Branch (PISB)",
+    "Location": "Pune, Maharashtra",
+    "Responsibilities": [
+      "Lead the technical team for Credenz, (flagship technical event of PICT-IEEE).",
+      "Integrated key features for ”Clash,” an MCQ platform, enhancing functionality and user experience."
+    ]
+  }
+]
+2025-02-27 18:34:21,682 - [generate_hr_questions] - INFO - [SUCCESS] Successfully configured Gemini model
+2025-02-27 18:34:21,683 - [generate_hr_questions] - INFO - Model: gemini-2.0-flash
+2025-02-27 18:34:21,683 - [generate_hr_questions] - INFO - Max Tokens: 2048
+2025-02-27 18:34:21,684 - [generate_hr_questions] - INFO - Temperature: 0.7
+2025-02-27 18:34:21,684 - [generate_hr_questions] - INFO - Generating questions...
+2025-02-27 18:34:36,219 - [generate_hr_questions] - INFO - [SUCCESS] Successfully generated questions
+2025-02-27 18:34:36,222 - [generate_hr_questions] - INFO - [SUCCESS] Questions saved to C:\Users\hplap\OneDrive\Desktop\Code\Resume Experience Verification\HR_Verification\Output\hr_questions.md
+2025-03-01 13:51:10,800 - [test] - INFO - Starting resume information extraction...
+2025-03-01 13:51:10,801 - [test] - INFO - Extracting text from PDF: D:\GitHubBot\Input\candidate_resume.pdf
+2025-03-01 13:51:10,812 - [test] - INFO - Found LinkedIn URL: https://linkedin.com/in/prasad-gujar
+2025-03-01 13:51:10,815 - [test] - INFO - Extracted 2 experience entries
+2025-03-01 13:51:10,816 - [test] - INFO - Data successfully saved to D:\GitHubBot\Output\output.json
+2025-03-01 13:52:00,847 - [test] - INFO - Starting resume information extraction...
+2025-03-01 13:52:00,848 - [test] - INFO - Extracting text from PDF: D:\GitHubBot\Input\candidate_resume.pdf
+2025-03-01 13:52:00,857 - [test] - INFO - Found LinkedIn URL: https://linkedin.com/in/prasad-gujar
+2025-03-01 13:52:00,859 - [test] - INFO - Extracted 2 experience entries
+2025-03-01 13:52:00,861 - [test] - INFO - Data successfully saved to D:\GitHubBot\Output\p_output.json
+2025-03-01 13:52:34,796 - [take_screenshots] - INFO - Starting LinkedIn screenshot process...
+2025-03-01 13:52:34,797 - [take_screenshots] - INFO - Opening LinkedIn Profile: https://linkedin.com/in/prasad-gujar
+2025-03-01 13:52:34,978 - [take_screenshots] - INFO - ⏳ Waiting for page to load...
+2025-03-01 13:52:45,131 - [take_screenshots] - INFO - Screenshot 1/10 saved as: D:\GitHubBot\Input\linkedin_screenshot1.png
+2025-03-01 13:52:47,819 - [take_screenshots] - INFO - Screenshot 2/10 saved as: D:\GitHubBot\Input\linkedin_screenshot2.png
+2025-03-01 13:52:50,453 - [take_screenshots] - INFO - Screenshot 3/10 saved as: D:\GitHubBot\Input\linkedin_screenshot3.png
+2025-03-01 13:52:53,040 - [take_screenshots] - INFO - Screenshot 4/10 saved as: D:\GitHubBot\Input\linkedin_screenshot4.png
+2025-03-01 13:52:55,633 - [take_screenshots] - INFO - Screenshot 5/10 saved as: D:\GitHubBot\Input\linkedin_screenshot5.png
+2025-03-01 13:52:58,249 - [take_screenshots] - INFO - Screenshot 6/10 saved as: D:\GitHubBot\Input\linkedin_screenshot6.png
+2025-03-01 13:53:00,882 - [take_screenshots] - INFO - Screenshot 7/10 saved as: D:\GitHubBot\Input\linkedin_screenshot7.png
+2025-03-01 13:53:03,483 - [take_screenshots] - INFO - Screenshot 8/10 saved as: D:\GitHubBot\Input\linkedin_screenshot8.png
+2025-03-01 13:53:06,132 - [take_screenshots] - INFO - Screenshot 9/10 saved as: D:\GitHubBot\Input\linkedin_screenshot9.png
+2025-03-01 13:53:08,704 - [take_screenshots] - INFO - Screenshot 10/10 saved as: D:\GitHubBot\Input\linkedin_screenshot10.png
+2025-03-01 13:54:20,821 - [take_screenshots] - INFO - Starting LinkedIn screenshot process...
+2025-03-01 13:54:20,822 - [take_screenshots] - INFO - Opening LinkedIn Profile: https://linkedin.com/in/prasad-gujar
+2025-03-01 13:54:20,966 - [take_screenshots] - INFO - ⏳ Waiting for page to load...
+2025-03-01 13:54:31,166 - [take_screenshots] - INFO - Screenshot 1/10 saved as: D:\GitHubBot\Input\linkedin_screenshot1.png
+2025-03-01 13:54:33,853 - [take_screenshots] - INFO - Screenshot 2/10 saved as: D:\GitHubBot\Input\linkedin_screenshot2.png
+2025-03-01 13:54:36,555 - [take_screenshots] - INFO - Screenshot 3/10 saved as: D:\GitHubBot\Input\linkedin_screenshot3.png
+2025-03-01 13:54:39,307 - [take_screenshots] - INFO - Screenshot 4/10 saved as: D:\GitHubBot\Input\linkedin_screenshot4.png
+2025-03-01 13:54:42,008 - [take_screenshots] - INFO - Screenshot 5/10 saved as: D:\GitHubBot\Input\linkedin_screenshot5.png
+2025-03-01 13:54:44,715 - [take_screenshots] - INFO - Screenshot 6/10 saved as: D:\GitHubBot\Input\linkedin_screenshot6.png
+2025-03-01 13:54:47,381 - [take_screenshots] - INFO - Screenshot 7/10 saved as: D:\GitHubBot\Input\linkedin_screenshot7.png
+2025-03-01 13:54:52,545 - [take_screenshots] - INFO - Starting LinkedIn screenshot process...
+2025-03-01 13:54:52,546 - [take_screenshots] - INFO - Opening LinkedIn Profile: https://linkedin.com/in/prasad-gujar
+2025-03-01 13:54:52,688 - [take_screenshots] - INFO - ⏳ Waiting for page to load...
+2025-03-01 13:55:02,838 - [take_screenshots] - INFO - Screenshot 1/10 saved as: D:\GitHubBot\Input\linkedin_screenshot1.png
+2025-03-01 13:55:05,479 - [take_screenshots] - INFO - Screenshot 2/10 saved as: D:\GitHubBot\Input\linkedin_screenshot2.png
+2025-03-01 13:55:08,151 - [take_screenshots] - INFO - Screenshot 3/10 saved as: D:\GitHubBot\Input\linkedin_screenshot3.png
+2025-03-01 13:55:10,781 - [take_screenshots] - INFO - Screenshot 4/10 saved as: D:\GitHubBot\Input\linkedin_screenshot4.png
+2025-03-01 13:55:13,440 - [take_screenshots] - INFO - Screenshot 5/10 saved as: D:\GitHubBot\Input\linkedin_screenshot5.png
+2025-03-01 13:55:16,092 - [take_screenshots] - INFO - Screenshot 6/10 saved as: D:\GitHubBot\Input\linkedin_screenshot6.png
+2025-03-01 13:55:18,742 - [take_screenshots] - INFO - Screenshot 7/10 saved as: D:\GitHubBot\Input\linkedin_screenshot7.png
+2025-03-01 13:55:21,410 - [take_screenshots] - INFO - Screenshot 8/10 saved as: D:\GitHubBot\Input\linkedin_screenshot8.png
+2025-03-01 13:55:24,052 - [take_screenshots] - INFO - Screenshot 9/10 saved as: D:\GitHubBot\Input\linkedin_screenshot9.png
+2025-03-01 13:55:26,718 - [take_screenshots] - INFO - Screenshot 10/10 saved as: D:\GitHubBot\Input\linkedin_screenshot10.png
+2025-03-01 13:56:01,956 - [p_scrap_img1] - INFO - Starting image scraping process...
+2025-03-01 13:56:01,957 - [p_scrap_img1] - INFO - Processing linkedin_screenshot4.png...
+2025-03-01 13:56:02,058 - [p_scrap_img1] - ERROR - Error in main process: tesseract is not installed or it's not in your PATH. See README file for more information.
+Traceback (most recent call last):
+  File "D:\GitHubBot\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 275, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1038, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1550, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHubBot\Bots\p_scrap_img1.py", line 131, in main
+    text = pytesseract.image_to_string(image)
+  File "D:\GitHubBot\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+  File "D:\GitHubBot\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\GitHubBot\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 352, in run_and_get_output
+    run_tesseract(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\GitHubBot\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 280, in run_tesseract
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-03-01 14:17:40,092 - [test] - INFO - Starting resume information extraction...
+2025-03-01 14:17:40,093 - [test] - INFO - Extracting text from PDF: D:\GitHubBot\Input\candidate_resume.pdf
+2025-03-01 14:17:40,101 - [test] - INFO - Found LinkedIn URL: https://linkedin.com/in/prasad-gujar
+2025-03-01 14:17:40,103 - [test] - INFO - Extracted 2 experience entries
+2025-03-01 14:17:40,104 - [test] - INFO - Data successfully saved to D:\GitHubBot\Output\p_output.json
+2025-03-01 14:17:40,392 - [take_screenshots] - INFO - Starting LinkedIn screenshot process...
+2025-03-01 14:17:40,394 - [take_screenshots] - INFO - Opening LinkedIn Profile: https://linkedin.com/in/prasad-gujar
+2025-03-01 14:17:40,541 - [take_screenshots] - INFO - ⏳ Waiting for page to load...
+2025-03-01 14:17:50,684 - [take_screenshots] - INFO - Screenshot 1/10 saved as: D:\GitHubBot\Input\linkedin_screenshot1.png
+2025-03-01 14:17:53,349 - [take_screenshots] - INFO - Screenshot 2/10 saved as: D:\GitHubBot\Input\linkedin_screenshot2.png
+2025-03-01 14:17:55,999 - [take_screenshots] - INFO - Screenshot 3/10 saved as: D:\GitHubBot\Input\linkedin_screenshot3.png
+2025-03-01 14:17:58,684 - [take_screenshots] - INFO - Screenshot 4/10 saved as: D:\GitHubBot\Input\linkedin_screenshot4.png
+2025-03-01 14:18:01,361 - [take_screenshots] - INFO - Screenshot 5/10 saved as: D:\GitHubBot\Input\linkedin_screenshot5.png
+2025-03-01 14:18:04,045 - [take_screenshots] - INFO - Screenshot 6/10 saved as: D:\GitHubBot\Input\linkedin_screenshot6.png
+2025-03-01 14:18:06,698 - [take_screenshots] - INFO - Screenshot 7/10 saved as: D:\GitHubBot\Input\linkedin_screenshot7.png
+2025-03-01 14:18:09,376 - [take_screenshots] - INFO - Screenshot 8/10 saved as: D:\GitHubBot\Input\linkedin_screenshot8.png
+2025-03-01 14:18:12,029 - [take_screenshots] - INFO - Screenshot 9/10 saved as: D:\GitHubBot\Input\linkedin_screenshot9.png
+2025-03-01 14:18:14,693 - [take_screenshots] - INFO - Screenshot 10/10 saved as: D:\GitHubBot\Input\linkedin_screenshot10.png
+2025-03-02 23:22:14,848 - [test] - INFO - Starting resume information extraction...
+2025-03-02 23:22:14,849 - [test] - INFO - Extracting text from PDF: D:\GitHubBot\Input\candidate_resume.pdf
+2025-03-02 23:22:14,888 - [test] - INFO - Found LinkedIn URL: https://linkedin.com/in/prasad-gujar
+2025-03-02 23:22:14,892 - [test] - INFO - Extracted 2 experience entries
+2025-03-02 23:22:14,893 - [test] - INFO - Data successfully saved to D:\GitHubBot\Output\p_output.json
+2025-03-02 23:22:25,306 - [take_screenshots] - INFO - Starting LinkedIn screenshot process...
+2025-03-02 23:22:25,307 - [take_screenshots] - INFO - Opening LinkedIn Profile: https://linkedin.com/in/prasad-gujar
+2025-03-02 23:22:25,415 - [take_screenshots] - INFO - ⏳ Waiting for page to load...
+2025-03-02 23:22:35,637 - [take_screenshots] - INFO - Screenshot 1/10 saved as: D:\GitHubBot\Input\linkedin_screenshot1.png
+2025-03-02 23:22:38,338 - [take_screenshots] - INFO - Screenshot 2/10 saved as: D:\GitHubBot\Input\linkedin_screenshot2.png
+2025-03-02 23:22:41,040 - [take_screenshots] - INFO - Screenshot 3/10 saved as: D:\GitHubBot\Input\linkedin_screenshot3.png
+2025-03-02 23:22:43,733 - [take_screenshots] - INFO - Screenshot 4/10 saved as: D:\GitHubBot\Input\linkedin_screenshot4.png
+2025-03-02 23:22:46,409 - [take_screenshots] - INFO - Screenshot 5/10 saved as: D:\GitHubBot\Input\linkedin_screenshot5.png
+2025-03-02 23:22:49,070 - [take_screenshots] - INFO - Screenshot 6/10 saved as: D:\GitHubBot\Input\linkedin_screenshot6.png
+2025-03-02 23:22:51,754 - [take_screenshots] - INFO - Screenshot 7/10 saved as: D:\GitHubBot\Input\linkedin_screenshot7.png
+2025-03-02 23:22:54,452 - [take_screenshots] - INFO - Screenshot 8/10 saved as: D:\GitHubBot\Input\linkedin_screenshot8.png
+2025-03-02 23:22:57,093 - [take_screenshots] - INFO - Screenshot 9/10 saved as: D:\GitHubBot\Input\linkedin_screenshot9.png
+2025-03-02 23:22:59,771 - [take_screenshots] - INFO - Screenshot 10/10 saved as: D:\GitHubBot\Input\linkedin_screenshot10.png
