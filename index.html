@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M Knowledge Graph Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #graph-container {
+            width: 100%;
+            height: 100vh;
+        }
+        .links line {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+        .nodes circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+        .node text {
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+        .node-brand {
+            fill: #ff0000;
+        }
+        .node-product {
+            fill: #00aaff;
+        }
+        .node-category {
+            fill: #00cc00;
+        }
+        .node-feature {
+            fill: #ffcc00;
+        }
+        .node-campaign {
+            fill: #ff00ff;
+        }
+        .node-value {
+            fill: #aa00ff;
+        }
+        .legend {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .tooltip {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px;
+            pointer-events: none;
+            opacity: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="graph-container"></div>
+    <div class="legend">
+        <h3>Node Types</h3>
+        <div class="legend-item"><div class="legend-color node-brand"></div>Brand</div>
+        <div class="legend-item"><div class="legend-color node-product"></div>Product</div>
+        <div class="legend-item"><div class="legend-color node-category"></div>Category</div>
+        <div class="legend-item"><div class="legend-color node-feature"></div>Feature</div>
+        <div class="legend-item"><div class="legend-color node-campaign"></div>Campaign</div>
+        <div class="legend-item"><div class="legend-color node-value"></div>Value</div>
+    </div>
+    <div class="controls">
+        <button id="resetZoom">Reset Zoom</button>
+        <input type="range" id="charge" min="-1000" max="-10" value="-300" step="10">
+        <label for="charge">Force Strength</label>
+    </div>
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script>
+        // Graph data
+        const graph = {
+            nodes: [
+                { id: "H&M", type: "brand", attributes: { tone: "Trendy", voice: "Casual", values: "Sustainability and Fashion" } },
+                
+                // Categories
+                { id: "Casual Wear", type: "category", attributes: { description: "Comfortable everyday clothing" } },
+                { id: "Formal Wear", type: "category", attributes: { description: "Elegant clothing for formal occasions" } },
+                { id: "Outerwear", type: "category", attributes: { description: "Jackets and coats for different seasons" } },
+                { id: "Footwear", type: "category", attributes: { description: "Shoes for various styles and occasions" } },
+                { id: "Accessories", type: "category", attributes: { description: "Fashion items like bags, sunglasses, and belts" } },
+                { id: "Sustainable Collection", type: "category", attributes: { description: "Eco-friendly products made with sustainable materials" } },
+                
+                // Products
+                { id: "H&M Casual Shirt", type: "product", attributes: { price: 29.99 } },
+                { id: "H&M Denim Jacket", type: "product", attributes: { price: 49.99 } },
+                { id: "H&M Leather Jacket", type: "product", attributes: { price: 129.99 } },
+                { id: "H&M Sneakers", type: "product", attributes: { price: 59.99 } },
+                { id: "H&M Running Shoes", type: "product", attributes: { price: 79.99 } },
+                { id: "H&M Handbag", type: "product", attributes: { price: 39.99 } },
+                { id: "H&M Sunglasses", type: "product", attributes: { price: 19.99 } },
+                { id: "H&M Cargo Pants", type: "product", attributes: { price: 45.99 } },
+                { id: "H&M Moisturizing Cream", type: "product", attributes: { price: 14.99 } },
+                // New Products
+                { id: "H&M Slim Fit Suit", type: "product", attributes: { price: 159.99 } },
+                { id: "H&M Recycled Polyester Dress", type: "product", attributes: { price: 49.99 } },
+                { id: "H&M Organic Cotton T-shirt", type: "product", attributes: { price: 19.99 } },
+                { id: "H&M Winter Parka", type: "product", attributes: { price: 99.99 } },
+                
+                // Features
+                { id: "Cotton", type: "feature", attributes: { category: "Material" } },
+                { id: "Breathable", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Durable", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Stylish", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Premium Leather", type: "feature", attributes: { category: "Material" } },
+                { id: "Water-Resistant", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Lightweight", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Shock Absorbent", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Comfortable", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Spacious", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Trendy Design", type: "feature", attributes: { category: "Benefit" } },
+                { id: "UV Protection", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Multi-Pocket", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Hydrating", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Smooth Finish", type: "feature", attributes: { category: "Benefit" } },
+                // New Features
+                { id: "Recycled Polyester", type: "feature", attributes: { category: "Material" } },
+                { id: "Organic Cotton", type: "feature", attributes: { category: "Material" } },
+                { id: "Slim Fit", type: "feature", attributes: { category: "Style" } },
+                { id: "Italian Fabric", type: "feature", attributes: { category: "Material" } },
+                { id: "Thermal Insulation", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Quick-Dry", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Eco-Friendly", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Wrinkle-Resistant", type: "feature", attributes: { category: "Benefit" } },
+                { id: "Stretch Fabric", type: "feature", attributes: { category: "Material" } },
+                
+                // Campaigns
+                { id: "WinterFashion2024", type: "campaign", attributes: { discount: "30%", start: "Dec 1", end: "Feb 28" } },
+                { id: "SummerCollection", type: "campaign", attributes: { discount: "20%", start: "June 1", end: "July 31" } },
+                { id: "SustainableFashion", type: "campaign", attributes: { discount: "15%", start: "Apr 1", end: "May 31" } },
+                
+                // Other
+                { id: "Discount", type: "property" },
+                { id: "30%", type: "value" },
+                { id: "20%", type: "value" },
+                { id: "15%", type: "value" }
+            ],
+            links: [
+                // Brand to Products
+                { source: "H&M", target: "H&M Casual Shirt", relation: "offers" },
+                { source: "H&M", target: "H&M Denim Jacket", relation: "offers" },
+                { source: "H&M", target: "H&M Leather Jacket", relation: "offers" },
+                { source: "H&M", target: "H&M Sneakers", relation: "offers" },
+                { source: "H&M", target: "H&M Running Shoes", relation: "offers" },
+                { source: "H&M", target: "H&M Handbag", relation: "offers" },
+                { source: "H&M", target: "H&M Sunglasses", relation: "offers" },
+                { source: "H&M", target: "H&M Cargo Pants", relation: "offers" },
+                { source: "H&M", target: "H&M Moisturizing Cream", relation: "offers" },
+                // Brand to New Products
+                { source: "H&M", target: "H&M Slim Fit Suit", relation: "offers" },
+                { source: "H&M", target: "H&M Recycled Polyester Dress", relation: "offers" },
+                { source: "H&M", target: "H&M Organic Cotton T-shirt", relation: "offers" },
+                { source: "H&M", target: "H&M Winter Parka", relation: "offers" },
+                
+                // Products to Categories
+                { source: "H&M Casual Shirt", target: "Casual Wear", relation: "belongs_to" },
+                { source: "H&M Denim Jacket", target: "Outerwear", relation: "belongs_to" },
+                { source: "H&M Leather Jacket", target: "Outerwear", relation: "belongs_to" },
+                { source: "H&M Sneakers", target: "Footwear", relation: "belongs_to" },
+                { source: "H&M Running Shoes", target: "Footwear", relation: "belongs_to" },
+                { source: "H&M Handbag", target: "Accessories", relation: "belongs_to" },
+                { source: "H&M Sunglasses", target: "Accessories", relation: "belongs_to" },
+                { source: "H&M Cargo Pants", target: "Casual Wear", relation: "belongs_to" },
+                { source: "H&M Moisturizing Cream", target: "Accessories", relation: "belongs_to" },
+                // New Products to Categories
+                { source: "H&M Slim Fit Suit", target: "Formal Wear", relation: "belongs_to" },
+                { source: "H&M Recycled Polyester Dress", target: "Sustainable Collection", relation: "belongs_to" },
+                { source: "H&M Organic Cotton T-shirt", target: "Sustainable Collection", relation: "belongs_to" },
+                { source: "H&M Winter Parka", target: "Outerwear", relation: "belongs_to" },
+                
+                // Products to Features
+                { source: "H&M Casual Shirt", target: "Cotton", relation: "has_feature" },
+                { source: "H&M Casual Shirt", target: "Breathable", relation: "has_feature" },
+                { source: "H&M Denim Jacket", target: "Durable", relation: "has_feature" },
+                { source: "H&M Denim Jacket", target: "Stylish", relation: "has_feature" },
+                { source: "H&M Leather Jacket", target: "Premium Leather", relation: "has_feature" },
+                { source: "H&M Leather Jacket", target: "Water-Resistant", relation: "has_feature" },
+                { source: "H&M Sneakers", target: "Lightweight", relation: "has_feature" },
+                { source: "H&M Sneakers", target: "Breathable", relation: "has_feature" },
+                { source: "H&M Running Shoes", target: "Shock Absorbent", relation: "has_feature" },
+                { source: "H&M Running Shoes", target: "Comfortable", relation: "has_feature" },
+                { source: "H&M Handbag", target: "Spacious", relation: "has_feature" },
+                { source: "H&M Handbag", target: "Trendy Design", relation: "has_feature" },
+                { source: "H&M Sunglasses", target: "UV Protection", relation: "has_feature" },
+                { source: "H&M Sunglasses", target: "Lightweight", relation: "has_feature" },
+                { source: "H&M Cargo Pants", target: "Multi-Pocket", relation: "has_feature" },
+                { source: "H&M Cargo Pants", target: "Durable", relation: "has_feature" },
+                { source: "H&M Moisturizing Cream", target: "Hydrating", relation: "has_feature" },
+                { source: "H&M Moisturizing Cream", target: "Smooth Finish", relation: "has_feature" },
+                // New Products to Features
+                { source: "H&M Slim Fit Suit", target: "Slim Fit", relation: "has_feature" },
+                { source: "H&M Slim Fit Suit", target: "Italian Fabric", relation: "has_feature" },
+                { source: "H&M Slim Fit Suit", target: "Wrinkle-Resistant", relation: "has_feature" },
+                { source: "H&M Recycled Polyester Dress", target: "Recycled Polyester", relation: "has_feature" },
+                { source: "H&M Recycled Polyester Dress", target: "Eco-Friendly", relation: "has_feature" },
+                { source: "H&M Recycled Polyester Dress", target: "Trendy Design", relation: "has_feature" },
+                { source: "H&M Organic Cotton T-shirt", target: "Organic Cotton", relation: "has_feature" },
+                { source: "H&M Organic Cotton T-shirt", target: "Eco-Friendly", relation: "has_feature" },
+                { source: "H&M Organic Cotton T-shirt", target: "Breathable", relation: "has_feature" },
+                { source: "H&M Winter Parka", target: "Thermal Insulation", relation: "has_feature" },
+                { source: "H&M Winter Parka", target: "Water-Resistant", relation: "has_feature" },
+                { source: "H&M Winter Parka", target: "Comfortable", relation: "has_feature" },
+                { source: "H&M Sneakers", target: "Quick-Dry", relation: "has_feature" },
+                { source: "H&M Running Shoes", target: "Stretch Fabric", relation: "has_feature" },
+                
+                // Campaigns to Products
+                { source: "WinterFashion2024", target: "H&M Leather Jacket", relation: "hasProduct" },
+                { source: "WinterFashion2024", target: "H&M Cargo Pants", relation: "hasProduct" },
+                { source: "WinterFashion2024", target: "H&M Winter Parka", relation: "hasProduct" },
+                { source: "SummerCollection", target: "H&M Casual Shirt", relation: "hasProduct" },
+                { source: "SummerCollection", target: "H&M Sneakers", relation: "hasProduct" },
+                { source: "SummerCollection", target: "H&M Sunglasses", relation: "hasProduct" },
+                { source: "SustainableFashion", target: "H&M Recycled Polyester Dress", relation: "hasProduct" },
+                { source: "SustainableFashion", target: "H&M Organic Cotton T-shirt", relation: "hasProduct" },
+                
+                // Campaigns to Properties
+                { source: "WinterFashion2024", target: "Discount", relation: "hasProperty" },
+                { source: "SummerCollection", target: "Discount", relation: "hasProperty" },
+                { source: "SustainableFashion", target: "Discount", relation: "hasProperty" },
+                
+                // Property to Value
+                { source: "Discount", target: "30%", relation: "value" },
+                { source: "Discount", target: "20%", relation: "value" },
+                { source: "Discount", target: "15%", relation: "value" }
+            ]
+        };
+
+        // Create SVG
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        
+        const svg = d3.select("#graph-container")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .call(d3.zoom()
+                .scaleExtent([0.1, 4])
+                .on("zoom", (event) => {
+                    g.attr("transform", event.transform);
+                }));
+        
+        const g = svg.append("g");
+        
+        // Define arrow markers for directed edges
+        svg.append("defs").append("marker")
+            .attr("id", "arrowhead")
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 20)
+            .attr("refY", 0)
+            .attr("orient", "auto")
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .append("path")
+            .attr("d", "M0,-5L10,0L0,5")
+            .attr("fill", "#999");
+        
+        // Create tooltip
+        const tooltip = d3.select("#tooltip");
+        
+        // Create the links
+        const link = g.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke-width", 1.5)
+            .attr("marker-end", "url(#arrowhead)")
+            .on("mouseover", function(event, d) {
+                tooltip.html(`Relation: ${d.relation}`)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY - 28) + "px")
+                    .style("opacity", 0.9);
+            })
+            .on("mouseout", function() {
+                tooltip.style("opacity", 0);
+            });
+        
+        // Create node groups
+        const node = g.append("g")
+            .attr("class", "nodes")
+            .selectAll(".node")
+            .data(graph.nodes)
+            .enter().append("g")
+            .attr("class", "node")
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+        
+        // Add circles to nodes
+        node.append("circle")
+            .attr("r", d => getNodeSize(d))
+            .attr("class", d => `node-${d.type}`)
+            .on("mouseover", function(event, d) {
+                let tooltipContent = `<strong>${d.id}</strong><br>Type: ${d.type}`;
+                
+                if (d.attributes) {
+                    tooltipContent += "<br><br>Attributes:";
+                    for (const [key, value] of Object.entries(d.attributes)) {
+                        tooltipContent += `<br>${key}: ${value}`;
+                    }
+                }
+                
+                tooltip.html(tooltipContent)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY - 28) + "px")
+                    .style("opacity", 0.9);
+            })
+            .on("mouseout", function() {
+                tooltip.style("opacity", 0);
+            });
+        
+        // Add labels to nodes
+        node.append("text")
+            .attr("dx", d => getNodeSize(d) + 2)
+            .attr("dy", ".35em")
+            .text(d => d.id);
+        
+        // Function to determine node size based on type
+        function getNodeSize(d) {
+            switch(d.type) {
+                case "brand": return 12;
+                case "product": return 8;
+                case "campaign": return 10;
+                case "category": return 10;
+                default: return 6;
+            }
+        }
+        
+        // Create force simulation
+        const simulation = d3.forceSimulation(graph.nodes)
+            .force("link", d3.forceLink(graph.links).id(d => d.id).distance(100))
+            .force("charge", d3.forceManyBody().strength(-300))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collide", d3.forceCollide().radius(d => getNodeSize(d) * 2))
+            .on("tick", ticked);
+        
+        // Update positions during simulation
+        function ticked() {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+            
+            node
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+        }
+        
+        // Drag functions
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+        
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+        
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+        
+        // Controls
+        d3.select("#resetZoom").on("click", function() {
+            svg.transition().duration(750).call(
+                d3.zoom().transform,
+                d3.zoomIdentity
+            );
+        });
+        
+        d3.select("#charge").on("input", function() {
+            simulation.force("charge").strength(+this.value);
+            simulation.alpha(1).restart();
+        });
+    </script>
+</body>
+</html>

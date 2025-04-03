@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "start_time": "2025-04-03T11:23:53.725700",
+    "query_count": 14,
+    "end_time": "2025-04-03T11:24:37.245481",
+    "total_time": 43.52350401878357
+  },
+  "responses": [
+    {
+      "query": "What’s the price of the H&M Casual Shirt?",
+      "response": "- Answer: The price of the H&M Casual Shirt is $29.99.\n- Sources: Products - HM-CS-001\n- Confidence: high\n",
+      "processing_time": 6.132534027099609
+    },
+    {
+      "query": "What makes the H&M Denim Jacket special?",
+      "response": "- Answer: The H&M Denim Jacket (HM-DJ-002) is priced at $49.99 and falls under the \"Outerwear\" category. Its features include a classic denim style, multiple pockets, and durable construction. It also has special features like being made from recycled denim, having a timeless design, and a water-resistant finish.\n- Sources: HM-DJ-002, H&M Denim Jacket_features_0, H&M Denim Jacket_features_1, H&M Denim Jacket_features_2, H&M Denim Jacket_special_features_0, H&M Denim Jacket_special_features_1, H&M Denim Jacket_special_features_2\n- Confidence: high\n",
+      "processing_time": 1.453359842300415
+    },
+    {
+      "query": "How do I use the H&M Moisturizing Cream?",
+      "response": "- Answer: I couldn't find that information. The knowledge graph contains information about the existence of \"H&M Moisturizing Cream\" (HM-MC-005) as a product with a price of $19.99, but no usage instructions are included.\n- Sources: Products, Sample Nodes\n- Confidence: high\n",
+      "processing_time": 1.566174030303955
+    },
+    {
+      "query": "Where can I find H&M Sneakers in the store?",
+      "response": "- Answer: H&M sells sneakers. To find them in a store, look for product ID HM-SN-004 in the Footwear section. The price is $59.99.\n- Sources: Products, Sample Edges (H&M sells H&M Sneakers), Product HM-SN-004\n- Confidence: high\n",
+      "processing_time": 1.3833608627319336
+    },
+    {
+      "query": "Are H&M Cargo Pants on sale right now?",
+      "response": "- Answer: I couldn't find information about current sales specifically for H&M Cargo Pants. There is a past promotion of 15% off with promo code CARGO15, but it was only valid until 2024-03-31.\n- Sources: Products, Promotions\n- Confidence: medium\n",
+      "processing_time": 1.0426690578460693
+    },
+    {
+      "query": "What’s included in the WinterFashion2024 campaign?",
+      "response": "- Answer: The WinterFashion2024 campaign runs from 2023-11-01 to 2024-02-28 and offers a 25% discount. The campaign includes products such as a Casual Wear shirt (HM-CS-001) priced at $29.99, an Outerwear denim jacket (HM-DJ-002) priced at $49.99, a Casual Wear pair of cargo pants (HM-CP-003) priced at $39.99, Footwear sneakers (HM-SN-004) priced at $59.99, a Beauty moisturizing cream (HM-MC-005) priced at $19.99, and Formal Wear leather jacket (HM-LJ-006) priced at $129.99.\n- Sources: WinterFashion2024, HM-CS-001, HM-DJ-002, HM-CP-003, HM-SN-004, HM-MC-005, HM-LJ-006\n- Confidence: high\n",
+      "processing_time": 1.8874738216400146
+    },
+    {
+      "query": "Do you have any formal wear at H&M?",
+      "response": "- Answer: Yes, H&M offers formal wear. For example, the product with ID \"HM-LJ-006\" is categorized as \"Formal Wear\" and costs $129.99.\n- Sources: Products, specifically product ID \"HM-LJ-006\"\n- Confidence: High\n",
+      "processing_time": 1.2835099697113037
+    },
+    {
+      "query": "Which H&M products are good for rainy weather?",
+      "response": "- Answer: The H&M Denim Jacket (HM-DJ-002), priced at $49.99, is suitable for rainy weather due to its water-resistant finish.\n- Sources: HM-DJ-002, H&M Denim Jacket_special_features_2\n- Confidence: high\n",
+      "processing_time": 1.128141164779663
+    },
+    {
+      "query": "What’s H&M famous for?",
+      "response": "- Answer: H&M is famous for fast fashion at affordable prices with a focus on sustainability. It's also known for being fashion-forward.\n- Sources: H&M_description, H&M_values_0, H&M_values_1, H&M_values_2\n- Confidence: high\n",
+      "processing_time": 1.0504238605499268
+    },
+    {
+      "query": "Can you show me everything H&M sells?",
+      "response": "- Answer: H&M sells a variety of products including:\n    - HM-CS-001: A Casual Wear item priced at $29.99.\n    - HM-DJ-002: An Outerwear item priced at $49.99.\n    - HM-CP-003: A Casual Wear item priced at $39.99.\n    - HM-SN-004: Footwear priced at $59.99.\n    - HM-MC-005: A Beauty product priced at $19.99.\n    - HM-LJ-006: Formal Wear priced at $129.99.\n- Sources: Product nodes with IDs HM-CS-001, HM-DJ-002, HM-CP-003, HM-SN-004, HM-MC-005, HM-LJ-006.\n- Confidence: high\n",
+      "processing_time": 1.7142281532287598
+    },
+    {
+      "query": "Which items in the WinterFashion2024 collection are good for rain?",
+      "response": "- Answer: The HM-DJ-002 Denim Jacket ($49.99) in the Outerwear category is part of the H&M product line and has a water-resistant finish, making it suitable for rain.\n- Sources: HM-DJ-002, H&M Denim Jacket_special_features_2\n- Confidence: high\n",
+      "processing_time": 1.1252870559692383
+    },
+    {
+      "query": "What kind of shoes does H&M have?",
+      "response": "- Answer: H&M sells sneakers, specifically product ID HM-SN-004, which are categorized as Footwear and priced at $59.99.\n- Sources: HM-SN-004, H&M_products_footwear\n- Confidence: high\n",
+      "processing_time": 1.0596659183502197
+    },
+    {
+      "query": "Are there any discounts on leather items at H&M?",
+      "response": "- Answer: Yes, there is a promotion for 20% off leather items with the promo code LEATHER20. This promotion is valid until 2024-02-15. H&M sells a Leather Jacket (HM-LJ-006) priced at $129.99.\n- Sources: Promotions (H&M_promotions_1), Products (HM-LJ-006)\n- Confidence: high\n",
+      "processing_time": 1.4550869464874268
+    },
+    {
+      "query": "What’s new in the summer collection at H&M?",
+      "response": "- Answer: H&M is running a SummerCollection2024 campaign from May 15, 2024, to August 31, 2024. The new products include: HM-CS-001 Casual Wear for $29.99, HM-DJ-002 Outerwear for $49.99, HM-CP-003 Casual Wear for $39.99, HM-SN-004 Footwear for $59.99, HM-MC-005 Beauty for $19.99, HM-LJ-006 Formal Wear for $129.99.\n- Sources: SummerCollection2024, HM-CS-001, HM-DJ-002, HM-CP-003, HM-SN-004, HM-MC-005, HM-LJ-006\n- Confidence: high\n",
+      "processing_time": 1.6927149295806885
+    }
+  ]
+}

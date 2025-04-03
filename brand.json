@@ -1,0 +1,121 @@
+{
+  "brand": {
+    "name": "H&M",
+    "description": "H&M is a multinational clothing retailer known for fast fashion at affordable prices with a focus on sustainability.",
+    "values": ["Affordability", "Sustainability", "Fashion-forward"],
+    "headquarters": "Stockholm, Sweden"
+  },
+  "products": {
+    "clothing": [
+      {
+        "id": "HM-CS-001",
+        "name": "H&M Casual Shirt",
+        "category": "Casual Wear",
+        "price": 29.99,
+        "features": ["Breathable cotton", "Machine washable", "Regular fit"],
+        "materials": ["100% organic cotton"],
+        "availability": ["All stores", "Online"],
+        "usage": "Wear as a standalone shirt or layer under jackets"
+      },
+      {
+        "id": "HM-DJ-002",
+        "name": "H&M Denim Jacket",
+        "category": "Outerwear",
+        "price": 49.99,
+        "features": ["Classic denim", "Multiple pockets", "Durable construction"],
+        "special_features": ["Recycled denim", "Timeless design", "Water-resistant finish"],
+        "availability": ["Most stores", "Online"],
+        "season": ["Spring", "Fall"]
+      },
+      {
+        "id": "HM-CP-003",
+        "name": "H&M Cargo Pants",
+        "category": "Casual Wear",
+        "price": 39.99,
+        "features": ["Multiple pockets", "Durable fabric", "Adjustable waist"],
+        "materials": ["Cotton blend"],
+        "availability": ["Selected stores", "Online"]
+      }
+    ],
+    "footwear": [
+      {
+        "id": "HM-SN-004",
+        "name": "H&M Sneakers",
+        "category": "Footwear",
+        "price": 59.99,
+        "features": ["Lightweight", "Breathable mesh", "Rubber sole"],
+        "store_location": "Shoe department, near accessories",
+        "types": ["Low-top", "High-top", "Platform"]
+      }
+    ],
+    "accessories": [
+      {
+        "id": "HM-MC-005",
+        "name": "H&M Moisturizing Cream",
+        "category": "Beauty",
+        "price": 19.99,
+        "features": ["Hydrating", "Non-greasy", "Fast-absorbing"],
+        "usage_instructions": "Apply to clean skin morning and night. Use gentle circular motions for better absorption.",
+        "ingredients": ["Hyaluronic acid", "Vitamin E", "Aloe vera"]
+      },
+      {
+        "id": "HM-LJ-006",
+        "name": "H&M Leather Jacket",
+        "category": "Formal Wear",
+        "price": 129.99,
+        "features": ["Genuine leather", "Water-resistant", "Timeless style"],
+        "special_care": "Use leather conditioner monthly"
+      }
+    ]
+  },
+  "campaigns": [
+    {
+      "name": "WinterFashion2024",
+      "period": "2023-11-01 to 2024-02-28",
+      "discount": "25%",
+      "included_products": ["H&M Leather Jacket", "H&M Cargo Pants", "H&M Wool Sweater"],
+      "themes": ["Water-resistant outerwear", "Layering pieces", "Cold-weather essentials"],
+      "marketing_message": "Stay warm in style with our winter collection"
+    },
+    {
+      "name": "SummerCollection2024",
+      "period": "2024-05-15 to 2024-08-31",
+      "new_arrivals": ["H&M Linen Shirt", "H&M Canvas Sneakers", "H&M Straw Hat"],
+      "themes": ["Lightweight fabrics", "Bright colors", "Beach-ready styles"]
+    }
+  ],
+  "store_info": {
+    "layout": {
+      "clothing": "Ground floor",
+      "footwear": "First floor, section B",
+      "accessories": "Near checkout counters",
+      "beauty": "First floor, next to footwear"
+    },
+    "services": ["Personal styling", "Gift cards", "Online order pickup"]
+  },
+  "current_promotions": [
+    {
+      "product_ids": ["HM-CP-003"],
+      "discount": "15% off",
+      "valid_until": "2024-03-31",
+      "promo_code": "CARGO15"
+    },
+    {
+      "category": "Leather items",
+      "discount": "20% off",
+      "valid_until": "2024-02-15",
+      "promo_code": "LEATHER20"
+    }
+  ],
+  "product_features": {
+    "water_resistant": ["H&M Denim Jacket", "H&M Leather Jacket", "H&M Trench Coat"],
+    "formal_wear": ["H&M Leather Jacket", "H&M Blazer", "H&M Dress Pants"],
+    "summer_essentials": ["H&M Linen Shirt", "H&M Shorts", "H&M Sandals"]
+  },
+  "full_product_catalog": {
+    "clothing": ["T-shirts", "Shirts", "Pants", "Jeans", "Jackets", "Dresses", "Suits"],
+    "footwear": ["Sneakers", "Boots", "Sandals", "Dress shoes", "Athletic shoes"],
+    "accessories": ["Bags", "Belts", "Hats", "Sunglasses", "Jewelry"],
+    "beauty": ["Skincare", "Makeup", "Fragrances", "Hair care"]
+  }
+}

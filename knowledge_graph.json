@@ -1,0 +1,2072 @@
+{
+  "metadata": {
+    "created_at": "2025-04-03T11:23:53.723089",
+    "node_count": 151,
+    "edge_count": 219,
+    "graph_type": "EnhancedKnowledgeGraph"
+  },
+  "nodes": [
+    {
+      "id": "H&M",
+      "type": "brand"
+    },
+    {
+      "id": "H&M_description",
+      "type": "attribute",
+      "value": "H&M is a multinational clothing retailer known for fast fashion at affordable prices with a focus on sustainability."
+    },
+    {
+      "id": "H&M_values",
+      "type": "attribute"
+    },
+    {
+      "id": "H&M_values_0",
+      "type": "list_item",
+      "value": "Affordability"
+    },
+    {
+      "id": "H&M_values_1",
+      "type": "list_item",
+      "value": "Sustainability"
+    },
+    {
+      "id": "H&M_values_2",
+      "type": "list_item",
+      "value": "Fashion-forward"
+    },
+    {
+      "id": "H&M_headquarters",
+      "type": "attribute",
+      "value": "Stockholm, Sweden"
+    },
+    {
+      "id": "H&M_products",
+      "type": "product_category"
+    },
+    {
+      "id": "H&M_products_clothing",
+      "name": "clothing",
+      "type": "category"
+    },
+    {
+      "id": "HM-CS-001",
+      "price": 29.99,
+      "category": "Casual Wear",
+      "type": "product"
+    },
+    {
+      "id": "H&M Casual Shirt_features",
+      "name": "features",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Casual Shirt_features_0",
+      "value": "Breathable cotton",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Casual Shirt_features_1",
+      "value": "Machine washable",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Casual Shirt_features_2",
+      "value": "Regular fit",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Casual Shirt_materials",
+      "name": "materials",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Casual Shirt_materials_0",
+      "value": "100% organic cotton",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Casual Shirt_availability",
+      "name": "availability",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Casual Shirt_availability_0",
+      "value": "All stores",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Casual Shirt_availability_1",
+      "value": "Online",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Casual Shirt_usage",
+      "name": "usage",
+      "value": "Wear as a standalone shirt or layer under jackets",
+      "type": "product_attribute"
+    },
+    {
+      "id": "HM-DJ-002",
+      "price": 49.99,
+      "category": "Outerwear",
+      "type": "product"
+    },
+    {
+      "id": "H&M Denim Jacket_features",
+      "name": "features",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Denim Jacket_features_0",
+      "value": "Classic denim",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_features_1",
+      "value": "Multiple pockets",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_features_2",
+      "value": "Durable construction",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_special_features",
+      "name": "special_features",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Denim Jacket_special_features_0",
+      "value": "Recycled denim",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_special_features_1",
+      "value": "Timeless design",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_special_features_2",
+      "value": "Water-resistant finish",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_availability",
+      "name": "availability",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Denim Jacket_availability_0",
+      "value": "Most stores",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_availability_1",
+      "value": "Online",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_season",
+      "name": "season",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Denim Jacket_season_0",
+      "value": "Spring",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Denim Jacket_season_1",
+      "value": "Fall",
+      "type": "attribute_value"
+    },
+    {
+      "id": "HM-CP-003",
+      "price": 39.99,
+      "category": "Casual Wear",
+      "type": "product"
+    },
+    {
+      "id": "H&M Cargo Pants_features",
+      "name": "features",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Cargo Pants_features_0",
+      "value": "Multiple pockets",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Cargo Pants_features_1",
+      "value": "Durable fabric",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Cargo Pants_features_2",
+      "value": "Adjustable waist",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Cargo Pants_materials",
+      "name": "materials",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Cargo Pants_materials_0",
+      "value": "Cotton blend",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Cargo Pants_availability",
+      "name": "availability",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Cargo Pants_availability_0",
+      "value": "Selected stores",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Cargo Pants_availability_1",
+      "value": "Online",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M_products_footwear",
+      "name": "footwear",
+      "type": "category"
+    },
+    {
+      "id": "HM-SN-004",
+      "price": 59.99,
+      "category": "Footwear",
+      "type": "product"
+    },
+    {
+      "id": "H&M Sneakers_features",
+      "name": "features",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Sneakers_features_0",
+      "value": "Lightweight",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Sneakers_features_1",
+      "value": "Breathable mesh",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Sneakers_features_2",
+      "value": "Rubber sole",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Sneakers_store_location",
+      "name": "store_location",
+      "value": "Shoe department, near accessories",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Sneakers_types",
+      "name": "types",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Sneakers_types_0",
+      "value": "Low-top",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Sneakers_types_1",
+      "value": "High-top",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Sneakers_types_2",
+      "value": "Platform",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M_products_accessories",
+      "name": "accessories",
+      "type": "category"
+    },
+    {
+      "id": "HM-MC-005",
+      "price": 19.99,
+      "category": "Beauty",
+      "type": "product"
+    },
+    {
+      "id": "H&M Moisturizing Cream_features",
+      "name": "features",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Moisturizing Cream_features_0",
+      "value": "Hydrating",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Moisturizing Cream_features_1",
+      "value": "Non-greasy",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Moisturizing Cream_features_2",
+      "value": "Fast-absorbing",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Moisturizing Cream_usage_instructions",
+      "name": "usage_instructions",
+      "value": "Apply to clean skin morning and night. Use gentle circular motions for better absorption.",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Moisturizing Cream_ingredients",
+      "name": "ingredients",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Moisturizing Cream_ingredients_0",
+      "value": "Hyaluronic acid",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Moisturizing Cream_ingredients_1",
+      "value": "Vitamin E",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Moisturizing Cream_ingredients_2",
+      "value": "Aloe vera",
+      "type": "attribute_value"
+    },
+    {
+      "id": "HM-LJ-006",
+      "price": 129.99,
+      "category": "Formal Wear",
+      "type": "product"
+    },
+    {
+      "id": "H&M Leather Jacket_features",
+      "name": "features",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M Leather Jacket_features_0",
+      "value": "Genuine leather",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Leather Jacket_features_1",
+      "value": "Water-resistant",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Leather Jacket_features_2",
+      "value": "Timeless style",
+      "type": "attribute_value"
+    },
+    {
+      "id": "H&M Leather Jacket_special_care",
+      "name": "special_care",
+      "value": "Use leather conditioner monthly",
+      "type": "product_attribute"
+    },
+    {
+      "id": "H&M_campaigns",
+      "type": "campaigns_container"
+    },
+    {
+      "id": "WinterFashion2024",
+      "period": "2023-11-01 to 2024-02-28",
+      "discount": "25%",
+      "type": "campaign"
+    },
+    {
+      "id": "WinterFashion2024_included_products",
+      "type": "product_list"
+    },
+    {
+      "id": "H&M Wool Sweater"
+    },
+    {
+      "id": "WinterFashion2024_themes",
+      "type": "theme_list"
+    },
+    {
+      "id": "WinterFashion2024_themes_0",
+      "value": "Water-resistant outerwear",
+      "type": "theme"
+    },
+    {
+      "id": "WinterFashion2024_themes_1",
+      "value": "Layering pieces",
+      "type": "theme"
+    },
+    {
+      "id": "WinterFashion2024_themes_2",
+      "value": "Cold-weather essentials",
+      "type": "theme"
+    },
+    {
+      "id": "SummerCollection2024",
+      "period": "2024-05-15 to 2024-08-31",
+      "discount": null,
+      "type": "campaign"
+    },
+    {
+      "id": "SummerCollection2024_new_arrivals",
+      "type": "product_list"
+    },
+    {
+      "id": "H&M Linen Shirt"
+    },
+    {
+      "id": "H&M Canvas Sneakers"
+    },
+    {
+      "id": "H&M Straw Hat"
+    },
+    {
+      "id": "SummerCollection2024_themes",
+      "type": "theme_list"
+    },
+    {
+      "id": "SummerCollection2024_themes_0",
+      "value": "Lightweight fabrics",
+      "type": "theme"
+    },
+    {
+      "id": "SummerCollection2024_themes_1",
+      "value": "Bright colors",
+      "type": "theme"
+    },
+    {
+      "id": "SummerCollection2024_themes_2",
+      "value": "Beach-ready styles",
+      "type": "theme"
+    },
+    {
+      "id": "H&M_store_info",
+      "type": "store_info"
+    },
+    {
+      "id": "H&M_store_info_layout",
+      "type": "store_layout"
+    },
+    {
+      "id": "H&M_store_info_layout_clothing",
+      "name": "clothing",
+      "location": "Ground floor",
+      "type": "section"
+    },
+    {
+      "id": "H&M_store_info_layout_footwear",
+      "name": "footwear",
+      "location": "First floor, section B",
+      "type": "section"
+    },
+    {
+      "id": "H&M_store_info_layout_accessories",
+      "name": "accessories",
+      "location": "Near checkout counters",
+      "type": "section"
+    },
+    {
+      "id": "H&M_store_info_layout_beauty",
+      "name": "beauty",
+      "location": "First floor, next to footwear",
+      "type": "section"
+    },
+    {
+      "id": "H&M_store_info_services",
+      "type": "service_list"
+    },
+    {
+      "id": "H&M_store_info_services_0",
+      "value": "Personal styling",
+      "type": "service"
+    },
+    {
+      "id": "H&M_store_info_services_1",
+      "value": "Gift cards",
+      "type": "service"
+    },
+    {
+      "id": "H&M_store_info_services_2",
+      "value": "Online order pickup",
+      "type": "service"
+    },
+    {
+      "id": "H&M_promotions",
+      "type": "promotions"
+    },
+    {
+      "id": "H&M_promotions_0",
+      "discount": "15% off",
+      "valid_until": "2024-03-31",
+      "promo_code": "CARGO15",
+      "type": "promotion"
+    },
+    {
+      "id": "H&M_promotions_1",
+      "discount": "20% off",
+      "valid_until": "2024-02-15",
+      "promo_code": "LEATHER20",
+      "type": "promotion"
+    },
+    {
+      "id": "H&M_promotions_1_category",
+      "value": "Leather items",
+      "type": "promo_category"
+    },
+    {
+      "id": "H&M_feature_water_resistant",
+      "name": "water_resistant",
+      "type": "product_feature"
+    },
+    {
+      "id": "H&M Trench Coat"
+    },
+    {
+      "id": "H&M_feature_formal_wear",
+      "name": "formal_wear",
+      "type": "product_feature"
+    },
+    {
+      "id": "H&M Blazer"
+    },
+    {
+      "id": "H&M Dress Pants"
+    },
+    {
+      "id": "H&M_feature_summer_essentials",
+      "name": "summer_essentials",
+      "type": "product_feature"
+    },
+    {
+      "id": "H&M Shorts"
+    },
+    {
+      "id": "H&M Sandals"
+    },
+    {
+      "id": "H&M_catalog",
+      "type": "product_catalog"
+    },
+    {
+      "id": "H&M_catalog_clothing",
+      "name": "clothing",
+      "type": "product_category"
+    },
+    {
+      "id": "H&M_catalog_clothing_0",
+      "value": "T-shirts",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_clothing_1",
+      "value": "Shirts",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_clothing_2",
+      "value": "Pants",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_clothing_3",
+      "value": "Jeans",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_clothing_4",
+      "value": "Jackets",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_clothing_5",
+      "value": "Dresses",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_clothing_6",
+      "value": "Suits",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_footwear",
+      "name": "footwear",
+      "type": "product_category"
+    },
+    {
+      "id": "H&M_catalog_footwear_0",
+      "value": "Sneakers",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_footwear_1",
+      "value": "Boots",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_footwear_2",
+      "value": "Sandals",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_footwear_3",
+      "value": "Dress shoes",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_footwear_4",
+      "value": "Athletic shoes",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_accessories",
+      "name": "accessories",
+      "type": "product_category"
+    },
+    {
+      "id": "H&M_catalog_accessories_0",
+      "value": "Bags",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_accessories_1",
+      "value": "Belts",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_accessories_2",
+      "value": "Hats",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_accessories_3",
+      "value": "Sunglasses",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_accessories_4",
+      "value": "Jewelry",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_beauty",
+      "name": "beauty",
+      "type": "product_category"
+    },
+    {
+      "id": "H&M_catalog_beauty_0",
+      "value": "Skincare",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_beauty_1",
+      "value": "Makeup",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_beauty_2",
+      "value": "Fragrances",
+      "type": "catalog_item"
+    },
+    {
+      "id": "H&M_catalog_beauty_3",
+      "value": "Hair care",
+      "type": "catalog_item"
+    },
+    {
+      "id": "tag_water_resistant",
+      "name": "water_resistant",
+      "type": "tag"
+    },
+    {
+      "id": "use_case_rainy_weather",
+      "name": "rainy weather",
+      "type": "use_case"
+    },
+    {
+      "id": "tag_formal_wear",
+      "name": "formal_wear",
+      "type": "tag"
+    },
+    {
+      "id": "category_formal_wear",
+      "name": "Formal Wear",
+      "type": "category"
+    },
+    {
+      "id": "tag_summer_essentials",
+      "name": "summer_essentials",
+      "type": "tag"
+    },
+    {
+      "id": "H&M_store_location_footwear",
+      "name": "footwear",
+      "location": "First floor, section B",
+      "type": "store_location"
+    },
+    {
+      "id": "H&M_store_location_beauty",
+      "name": "beauty",
+      "location": "First floor, next to footwear",
+      "type": "store_location"
+    },
+    {
+      "id": "WinterFashion2024_theme_0",
+      "value": "Water-resistant outerwear",
+      "type": "theme"
+    },
+    {
+      "id": "WinterFashion2024_theme_1",
+      "value": "Layering pieces",
+      "type": "theme"
+    },
+    {
+      "id": "WinterFashion2024_theme_2",
+      "value": "Cold-weather essentials",
+      "type": "theme"
+    },
+    {
+      "id": "SummerCollection2024_theme_0",
+      "value": "Lightweight fabrics",
+      "type": "theme"
+    },
+    {
+      "id": "SummerCollection2024_theme_1",
+      "value": "Bright colors",
+      "type": "theme"
+    },
+    {
+      "id": "SummerCollection2024_theme_2",
+      "value": "Beach-ready styles",
+      "type": "theme"
+    }
+  ],
+  "edges": [
+    {
+      "source": "H&M",
+      "target": "H&M_description",
+      "key": 0,
+      "relation": "has_description"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_values",
+      "key": 1,
+      "relation": "has_values"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_headquarters",
+      "key": 5,
+      "relation": "has_headquarters"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_products",
+      "key": 6,
+      "relation": "has_products"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M Casual Shirt",
+      "key": 10,
+      "relation": "sells"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M Denim Jacket",
+      "key": 23,
+      "relation": "sells"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M Cargo Pants",
+      "key": 40,
+      "relation": "sells"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M Sneakers",
+      "key": 53,
+      "relation": "sells"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M Moisturizing Cream",
+      "key": 66,
+      "relation": "sells"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M Leather Jacket",
+      "key": 78,
+      "relation": "sells"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_campaigns",
+      "key": 84,
+      "relation": "has_campaigns"
+    },
+    {
+      "source": "H&M",
+      "target": "WinterFashion2024",
+      "key": 86,
+      "relation": "runs"
+    },
+    {
+      "source": "H&M",
+      "target": "SummerCollection2024",
+      "key": 102,
+      "relation": "runs"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_store_info",
+      "key": 117,
+      "relation": "has_store_info"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_promotions",
+      "key": 131,
+      "relation": "has_promotions"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_feature_water_resistant",
+      "key": 137,
+      "relation": "offers_feature"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_feature_formal_wear",
+      "key": 144,
+      "relation": "offers_feature"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_feature_summer_essentials",
+      "key": 151,
+      "relation": "offers_feature"
+    },
+    {
+      "source": "H&M",
+      "target": "H&M_catalog",
+      "key": 158,
+      "relation": "has_catalog"
+    },
+    {
+      "source": "H&M_values",
+      "target": "H&M_values_0",
+      "key": 2,
+      "relation": "item_0"
+    },
+    {
+      "source": "H&M_values",
+      "target": "H&M_values_1",
+      "key": 3,
+      "relation": "item_1"
+    },
+    {
+      "source": "H&M_values",
+      "target": "H&M_values_2",
+      "key": 4,
+      "relation": "item_2"
+    },
+    {
+      "source": "H&M_products",
+      "target": "H&M_products_clothing",
+      "key": 7,
+      "relation": "has_category"
+    },
+    {
+      "source": "H&M_products",
+      "target": "H&M_products_footwear",
+      "key": 50,
+      "relation": "has_category"
+    },
+    {
+      "source": "H&M_products",
+      "target": "H&M_products_accessories",
+      "key": 63,
+      "relation": "has_category"
+    },
+    {
+      "source": "H&M_products_clothing",
+      "target": "H&M Casual Shirt",
+      "key": 8,
+      "relation": "contains_product"
+    },
+    {
+      "source": "H&M_products_clothing",
+      "target": "H&M Denim Jacket",
+      "key": 21,
+      "relation": "contains_product"
+    },
+    {
+      "source": "H&M_products_clothing",
+      "target": "H&M Cargo Pants",
+      "key": 38,
+      "relation": "contains_product"
+    },
+    {
+      "source": "H&M Casual Shirt",
+      "target": "H&M_products_clothing",
+      "key": 9,
+      "relation": "belongs_to_category"
+    },
+    {
+      "source": "H&M Casual Shirt",
+      "target": "H&M Casual Shirt_features",
+      "key": 11,
+      "relation": "has_features"
+    },
+    {
+      "source": "H&M Casual Shirt",
+      "target": "H&M Casual Shirt_materials",
+      "key": 15,
+      "relation": "has_materials"
+    },
+    {
+      "source": "H&M Casual Shirt",
+      "target": "H&M Casual Shirt_availability",
+      "key": 17,
+      "relation": "has_availability"
+    },
+    {
+      "source": "H&M Casual Shirt",
+      "target": "H&M Casual Shirt_usage",
+      "key": 20,
+      "relation": "has_usage"
+    },
+    {
+      "source": "H&M Casual Shirt_features",
+      "target": "H&M Casual Shirt_features_0",
+      "key": 12,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Casual Shirt_features",
+      "target": "H&M Casual Shirt_features_1",
+      "key": 13,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Casual Shirt_features",
+      "target": "H&M Casual Shirt_features_2",
+      "key": 14,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Casual Shirt_materials",
+      "target": "H&M Casual Shirt_materials_0",
+      "key": 16,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Casual Shirt_availability",
+      "target": "H&M Casual Shirt_availability_0",
+      "key": 18,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Casual Shirt_availability",
+      "target": "H&M Casual Shirt_availability_1",
+      "key": 19,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket",
+      "target": "H&M_products_clothing",
+      "key": 22,
+      "relation": "belongs_to_category"
+    },
+    {
+      "source": "H&M Denim Jacket",
+      "target": "H&M Denim Jacket_features",
+      "key": 24,
+      "relation": "has_features"
+    },
+    {
+      "source": "H&M Denim Jacket",
+      "target": "H&M Denim Jacket_special_features",
+      "key": 28,
+      "relation": "has_special_features"
+    },
+    {
+      "source": "H&M Denim Jacket",
+      "target": "H&M Denim Jacket_availability",
+      "key": 32,
+      "relation": "has_availability"
+    },
+    {
+      "source": "H&M Denim Jacket",
+      "target": "H&M Denim Jacket_season",
+      "key": 35,
+      "relation": "has_season"
+    },
+    {
+      "source": "H&M Denim Jacket",
+      "target": "H&M_feature_water_resistant",
+      "key": 139,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Denim Jacket",
+      "target": "tag_water_resistant",
+      "key": 184,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M Denim Jacket",
+      "target": "use_case_rainy_weather",
+      "key": 185,
+      "relation": "suitable_for"
+    },
+    {
+      "source": "H&M Denim Jacket_features",
+      "target": "H&M Denim Jacket_features_0",
+      "key": 25,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_features",
+      "target": "H&M Denim Jacket_features_1",
+      "key": 26,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_features",
+      "target": "H&M Denim Jacket_features_2",
+      "key": 27,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_special_features",
+      "target": "H&M Denim Jacket_special_features_0",
+      "key": 29,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_special_features",
+      "target": "H&M Denim Jacket_special_features_1",
+      "key": 30,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_special_features",
+      "target": "H&M Denim Jacket_special_features_2",
+      "key": 31,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_availability",
+      "target": "H&M Denim Jacket_availability_0",
+      "key": 33,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_availability",
+      "target": "H&M Denim Jacket_availability_1",
+      "key": 34,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_season",
+      "target": "H&M Denim Jacket_season_0",
+      "key": 36,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Denim Jacket_season",
+      "target": "H&M Denim Jacket_season_1",
+      "key": 37,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "H&M_products_clothing",
+      "key": 39,
+      "relation": "belongs_to_category"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "H&M Cargo Pants_features",
+      "key": 41,
+      "relation": "has_features"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "H&M Cargo Pants_materials",
+      "key": 45,
+      "relation": "has_materials"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "H&M Cargo Pants_availability",
+      "key": 47,
+      "relation": "has_availability"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "WinterFashion2024",
+      "key": 92,
+      "relation": "featured_in"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "H&M_promotions_0",
+      "key": 134,
+      "relation": "has_promotion"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "WinterFashion2024_theme_0",
+      "key": 204,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "WinterFashion2024_theme_1",
+      "key": 205,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Cargo Pants",
+      "target": "WinterFashion2024_theme_2",
+      "key": 206,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Cargo Pants_features",
+      "target": "H&M Cargo Pants_features_0",
+      "key": 42,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Cargo Pants_features",
+      "target": "H&M Cargo Pants_features_1",
+      "key": 43,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Cargo Pants_features",
+      "target": "H&M Cargo Pants_features_2",
+      "key": 44,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Cargo Pants_materials",
+      "target": "H&M Cargo Pants_materials_0",
+      "key": 46,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Cargo Pants_availability",
+      "target": "H&M Cargo Pants_availability_0",
+      "key": 48,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Cargo Pants_availability",
+      "target": "H&M Cargo Pants_availability_1",
+      "key": 49,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_products_footwear",
+      "target": "H&M Sneakers",
+      "key": 51,
+      "relation": "contains_product"
+    },
+    {
+      "source": "H&M Sneakers",
+      "target": "H&M_products_footwear",
+      "key": 52,
+      "relation": "belongs_to_category"
+    },
+    {
+      "source": "H&M Sneakers",
+      "target": "H&M Sneakers_features",
+      "key": 54,
+      "relation": "has_features"
+    },
+    {
+      "source": "H&M Sneakers",
+      "target": "H&M Sneakers_store_location",
+      "key": 58,
+      "relation": "has_store_location"
+    },
+    {
+      "source": "H&M Sneakers",
+      "target": "H&M Sneakers_types",
+      "key": 59,
+      "relation": "has_types"
+    },
+    {
+      "source": "H&M Sneakers",
+      "target": "H&M_store_location_footwear",
+      "key": 199,
+      "relation": "located_at"
+    },
+    {
+      "source": "H&M Sneakers_features",
+      "target": "H&M Sneakers_features_0",
+      "key": 55,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Sneakers_features",
+      "target": "H&M Sneakers_features_1",
+      "key": 56,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Sneakers_features",
+      "target": "H&M Sneakers_features_2",
+      "key": 57,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Sneakers_types",
+      "target": "H&M Sneakers_types_0",
+      "key": 60,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Sneakers_types",
+      "target": "H&M Sneakers_types_1",
+      "key": 61,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Sneakers_types",
+      "target": "H&M Sneakers_types_2",
+      "key": 62,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_products_accessories",
+      "target": "H&M Moisturizing Cream",
+      "key": 64,
+      "relation": "contains_product"
+    },
+    {
+      "source": "H&M_products_accessories",
+      "target": "H&M Leather Jacket",
+      "key": 76,
+      "relation": "contains_product"
+    },
+    {
+      "source": "H&M Moisturizing Cream",
+      "target": "H&M_products_accessories",
+      "key": 65,
+      "relation": "belongs_to_category"
+    },
+    {
+      "source": "H&M Moisturizing Cream",
+      "target": "H&M Moisturizing Cream_features",
+      "key": 67,
+      "relation": "has_features"
+    },
+    {
+      "source": "H&M Moisturizing Cream",
+      "target": "H&M Moisturizing Cream_usage_instructions",
+      "key": 71,
+      "relation": "has_usage_instructions"
+    },
+    {
+      "source": "H&M Moisturizing Cream",
+      "target": "H&M Moisturizing Cream_ingredients",
+      "key": 72,
+      "relation": "has_ingredients"
+    },
+    {
+      "source": "H&M Moisturizing Cream",
+      "target": "H&M_store_location_beauty",
+      "key": 200,
+      "relation": "located_at"
+    },
+    {
+      "source": "H&M Moisturizing Cream_features",
+      "target": "H&M Moisturizing Cream_features_0",
+      "key": 68,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Moisturizing Cream_features",
+      "target": "H&M Moisturizing Cream_features_1",
+      "key": 69,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Moisturizing Cream_features",
+      "target": "H&M Moisturizing Cream_features_2",
+      "key": 70,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Moisturizing Cream_ingredients",
+      "target": "H&M Moisturizing Cream_ingredients_0",
+      "key": 73,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Moisturizing Cream_ingredients",
+      "target": "H&M Moisturizing Cream_ingredients_1",
+      "key": 74,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Moisturizing Cream_ingredients",
+      "target": "H&M Moisturizing Cream_ingredients_2",
+      "key": 75,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "H&M_products_accessories",
+      "key": 77,
+      "relation": "belongs_to_category"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "H&M Leather Jacket_features",
+      "key": 79,
+      "relation": "has_features"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "H&M Leather Jacket_special_care",
+      "key": 83,
+      "relation": "has_special_care"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "WinterFashion2024",
+      "key": 89,
+      "relation": "featured_in"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "H&M_feature_water_resistant",
+      "key": 141,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "H&M_feature_formal_wear",
+      "key": 146,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "tag_water_resistant",
+      "key": 186,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "use_case_rainy_weather",
+      "key": 187,
+      "relation": "suitable_for"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "tag_formal_wear",
+      "key": 190,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "category_formal_wear",
+      "key": 191,
+      "relation": "belongs_to"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "WinterFashion2024_theme_0",
+      "key": 201,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "WinterFashion2024_theme_1",
+      "key": 202,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Leather Jacket",
+      "target": "WinterFashion2024_theme_2",
+      "key": 203,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Leather Jacket_features",
+      "target": "H&M Leather Jacket_features_0",
+      "key": 80,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Leather Jacket_features",
+      "target": "H&M Leather Jacket_features_1",
+      "key": 81,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Leather Jacket_features",
+      "target": "H&M Leather Jacket_features_2",
+      "key": 82,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_campaigns",
+      "target": "WinterFashion2024",
+      "key": 85,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_campaigns",
+      "target": "SummerCollection2024",
+      "key": 101,
+      "relation": "contains"
+    },
+    {
+      "source": "WinterFashion2024",
+      "target": "WinterFashion2024_included_products",
+      "key": 87,
+      "relation": "includes"
+    },
+    {
+      "source": "WinterFashion2024",
+      "target": "H&M Leather Jacket",
+      "key": 88,
+      "relation": "features"
+    },
+    {
+      "source": "WinterFashion2024",
+      "target": "H&M Cargo Pants",
+      "key": 91,
+      "relation": "features"
+    },
+    {
+      "source": "WinterFashion2024",
+      "target": "H&M Wool Sweater",
+      "key": 94,
+      "relation": "features"
+    },
+    {
+      "source": "WinterFashion2024",
+      "target": "WinterFashion2024_themes",
+      "key": 97,
+      "relation": "has_themes"
+    },
+    {
+      "source": "WinterFashion2024_included_products",
+      "target": "H&M Leather Jacket",
+      "key": 90,
+      "relation": "contains"
+    },
+    {
+      "source": "WinterFashion2024_included_products",
+      "target": "H&M Cargo Pants",
+      "key": 93,
+      "relation": "contains"
+    },
+    {
+      "source": "WinterFashion2024_included_products",
+      "target": "H&M Wool Sweater",
+      "key": 96,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Wool Sweater",
+      "target": "WinterFashion2024",
+      "key": 95,
+      "relation": "featured_in"
+    },
+    {
+      "source": "H&M Wool Sweater",
+      "target": "WinterFashion2024_theme_0",
+      "key": 207,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Wool Sweater",
+      "target": "WinterFashion2024_theme_1",
+      "key": 208,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Wool Sweater",
+      "target": "WinterFashion2024_theme_2",
+      "key": 209,
+      "relation": "has_theme"
+    },
+    {
+      "source": "WinterFashion2024_themes",
+      "target": "WinterFashion2024_themes_0",
+      "key": 98,
+      "relation": "contains"
+    },
+    {
+      "source": "WinterFashion2024_themes",
+      "target": "WinterFashion2024_themes_1",
+      "key": 99,
+      "relation": "contains"
+    },
+    {
+      "source": "WinterFashion2024_themes",
+      "target": "WinterFashion2024_themes_2",
+      "key": 100,
+      "relation": "contains"
+    },
+    {
+      "source": "SummerCollection2024",
+      "target": "SummerCollection2024_new_arrivals",
+      "key": 103,
+      "relation": "introduces"
+    },
+    {
+      "source": "SummerCollection2024",
+      "target": "H&M Linen Shirt",
+      "key": 104,
+      "relation": "introduces"
+    },
+    {
+      "source": "SummerCollection2024",
+      "target": "H&M Canvas Sneakers",
+      "key": 107,
+      "relation": "introduces"
+    },
+    {
+      "source": "SummerCollection2024",
+      "target": "H&M Straw Hat",
+      "key": 110,
+      "relation": "introduces"
+    },
+    {
+      "source": "SummerCollection2024",
+      "target": "SummerCollection2024_themes",
+      "key": 113,
+      "relation": "has_themes"
+    },
+    {
+      "source": "SummerCollection2024_new_arrivals",
+      "target": "H&M Linen Shirt",
+      "key": 106,
+      "relation": "contains"
+    },
+    {
+      "source": "SummerCollection2024_new_arrivals",
+      "target": "H&M Canvas Sneakers",
+      "key": 109,
+      "relation": "contains"
+    },
+    {
+      "source": "SummerCollection2024_new_arrivals",
+      "target": "H&M Straw Hat",
+      "key": 112,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M Linen Shirt",
+      "target": "SummerCollection2024",
+      "key": 105,
+      "relation": "introduced_in"
+    },
+    {
+      "source": "H&M Linen Shirt",
+      "target": "H&M_feature_summer_essentials",
+      "key": 153,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Linen Shirt",
+      "target": "tag_summer_essentials",
+      "key": 196,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M Linen Shirt",
+      "target": "SummerCollection2024_theme_0",
+      "key": 210,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Linen Shirt",
+      "target": "SummerCollection2024_theme_1",
+      "key": 211,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Linen Shirt",
+      "target": "SummerCollection2024_theme_2",
+      "key": 212,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Canvas Sneakers",
+      "target": "SummerCollection2024",
+      "key": 108,
+      "relation": "introduced_in"
+    },
+    {
+      "source": "H&M Canvas Sneakers",
+      "target": "SummerCollection2024_theme_0",
+      "key": 213,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Canvas Sneakers",
+      "target": "SummerCollection2024_theme_1",
+      "key": 214,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Canvas Sneakers",
+      "target": "SummerCollection2024_theme_2",
+      "key": 215,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Straw Hat",
+      "target": "SummerCollection2024",
+      "key": 111,
+      "relation": "introduced_in"
+    },
+    {
+      "source": "H&M Straw Hat",
+      "target": "SummerCollection2024_theme_0",
+      "key": 216,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Straw Hat",
+      "target": "SummerCollection2024_theme_1",
+      "key": 217,
+      "relation": "has_theme"
+    },
+    {
+      "source": "H&M Straw Hat",
+      "target": "SummerCollection2024_theme_2",
+      "key": 218,
+      "relation": "has_theme"
+    },
+    {
+      "source": "SummerCollection2024_themes",
+      "target": "SummerCollection2024_themes_0",
+      "key": 114,
+      "relation": "contains"
+    },
+    {
+      "source": "SummerCollection2024_themes",
+      "target": "SummerCollection2024_themes_1",
+      "key": 115,
+      "relation": "contains"
+    },
+    {
+      "source": "SummerCollection2024_themes",
+      "target": "SummerCollection2024_themes_2",
+      "key": 116,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_store_info",
+      "target": "H&M_store_info_layout",
+      "key": 118,
+      "relation": "has_layout"
+    },
+    {
+      "source": "H&M_store_info",
+      "target": "H&M_store_info_services",
+      "key": 127,
+      "relation": "offers"
+    },
+    {
+      "source": "H&M_store_info_layout",
+      "target": "H&M_store_info_layout_clothing",
+      "key": 119,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_store_info_layout",
+      "target": "H&M_store_info_layout_footwear",
+      "key": 121,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_store_info_layout",
+      "target": "H&M_store_info_layout_accessories",
+      "key": 123,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_store_info_layout",
+      "target": "H&M_store_info_layout_beauty",
+      "key": 125,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_store_info_layout_clothing",
+      "target": "H&M_store_info_layout",
+      "key": 120,
+      "relation": "part_of"
+    },
+    {
+      "source": "H&M_store_info_layout_footwear",
+      "target": "H&M_store_info_layout",
+      "key": 122,
+      "relation": "part_of"
+    },
+    {
+      "source": "H&M_store_info_layout_accessories",
+      "target": "H&M_store_info_layout",
+      "key": 124,
+      "relation": "part_of"
+    },
+    {
+      "source": "H&M_store_info_layout_beauty",
+      "target": "H&M_store_info_layout",
+      "key": 126,
+      "relation": "part_of"
+    },
+    {
+      "source": "H&M_store_info_services",
+      "target": "H&M_store_info_services_0",
+      "key": 128,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_store_info_services",
+      "target": "H&M_store_info_services_1",
+      "key": 129,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_store_info_services",
+      "target": "H&M_store_info_services_2",
+      "key": 130,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_promotions",
+      "target": "H&M_promotions_0",
+      "key": 132,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_promotions",
+      "target": "H&M_promotions_1",
+      "key": 135,
+      "relation": "contains"
+    },
+    {
+      "source": "H&M_promotions_0",
+      "target": "H&M Cargo Pants",
+      "key": 133,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M_promotions_1",
+      "target": "H&M_promotions_1_category",
+      "key": 136,
+      "relation": "applies_to_category"
+    },
+    {
+      "source": "H&M_feature_water_resistant",
+      "target": "H&M Denim Jacket",
+      "key": 138,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M_feature_water_resistant",
+      "target": "H&M Leather Jacket",
+      "key": 140,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M_feature_water_resistant",
+      "target": "H&M Trench Coat",
+      "key": 142,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M Trench Coat",
+      "target": "H&M_feature_water_resistant",
+      "key": 143,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Trench Coat",
+      "target": "tag_water_resistant",
+      "key": 188,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M Trench Coat",
+      "target": "use_case_rainy_weather",
+      "key": 189,
+      "relation": "suitable_for"
+    },
+    {
+      "source": "H&M_feature_formal_wear",
+      "target": "H&M Leather Jacket",
+      "key": 145,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M_feature_formal_wear",
+      "target": "H&M Blazer",
+      "key": 147,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M_feature_formal_wear",
+      "target": "H&M Dress Pants",
+      "key": 149,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M Blazer",
+      "target": "H&M_feature_formal_wear",
+      "key": 148,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Blazer",
+      "target": "tag_formal_wear",
+      "key": 192,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M Blazer",
+      "target": "category_formal_wear",
+      "key": 193,
+      "relation": "belongs_to"
+    },
+    {
+      "source": "H&M Dress Pants",
+      "target": "H&M_feature_formal_wear",
+      "key": 150,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Dress Pants",
+      "target": "tag_formal_wear",
+      "key": 194,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M Dress Pants",
+      "target": "category_formal_wear",
+      "key": 195,
+      "relation": "belongs_to"
+    },
+    {
+      "source": "H&M_feature_summer_essentials",
+      "target": "H&M Linen Shirt",
+      "key": 152,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M_feature_summer_essentials",
+      "target": "H&M Shorts",
+      "key": 154,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M_feature_summer_essentials",
+      "target": "H&M Sandals",
+      "key": 156,
+      "relation": "applies_to"
+    },
+    {
+      "source": "H&M Shorts",
+      "target": "H&M_feature_summer_essentials",
+      "key": 155,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Shorts",
+      "target": "tag_summer_essentials",
+      "key": 197,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M Sandals",
+      "target": "H&M_feature_summer_essentials",
+      "key": 157,
+      "relation": "has_feature"
+    },
+    {
+      "source": "H&M Sandals",
+      "target": "tag_summer_essentials",
+      "key": 198,
+      "relation": "tagged_as"
+    },
+    {
+      "source": "H&M_catalog",
+      "target": "H&M_catalog_clothing",
+      "key": 159,
+      "relation": "includes"
+    },
+    {
+      "source": "H&M_catalog",
+      "target": "H&M_catalog_footwear",
+      "key": 167,
+      "relation": "includes"
+    },
+    {
+      "source": "H&M_catalog",
+      "target": "H&M_catalog_accessories",
+      "key": 173,
+      "relation": "includes"
+    },
+    {
+      "source": "H&M_catalog",
+      "target": "H&M_catalog_beauty",
+      "key": 179,
+      "relation": "includes"
+    },
+    {
+      "source": "H&M_catalog_clothing",
+      "target": "H&M_catalog_clothing_0",
+      "key": 160,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_clothing",
+      "target": "H&M_catalog_clothing_1",
+      "key": 161,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_clothing",
+      "target": "H&M_catalog_clothing_2",
+      "key": 162,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_clothing",
+      "target": "H&M_catalog_clothing_3",
+      "key": 163,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_clothing",
+      "target": "H&M_catalog_clothing_4",
+      "key": 164,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_clothing",
+      "target": "H&M_catalog_clothing_5",
+      "key": 165,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_clothing",
+      "target": "H&M_catalog_clothing_6",
+      "key": 166,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_footwear",
+      "target": "H&M_catalog_footwear_0",
+      "key": 168,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_footwear",
+      "target": "H&M_catalog_footwear_1",
+      "key": 169,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_footwear",
+      "target": "H&M_catalog_footwear_2",
+      "key": 170,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_footwear",
+      "target": "H&M_catalog_footwear_3",
+      "key": 171,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_footwear",
+      "target": "H&M_catalog_footwear_4",
+      "key": 172,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_accessories",
+      "target": "H&M_catalog_accessories_0",
+      "key": 174,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_accessories",
+      "target": "H&M_catalog_accessories_1",
+      "key": 175,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_accessories",
+      "target": "H&M_catalog_accessories_2",
+      "key": 176,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_accessories",
+      "target": "H&M_catalog_accessories_3",
+      "key": 177,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_accessories",
+      "target": "H&M_catalog_accessories_4",
+      "key": 178,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_beauty",
+      "target": "H&M_catalog_beauty_0",
+      "key": 180,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_beauty",
+      "target": "H&M_catalog_beauty_1",
+      "key": 181,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_beauty",
+      "target": "H&M_catalog_beauty_2",
+      "key": 182,
+      "relation": "lists"
+    },
+    {
+      "source": "H&M_catalog_beauty",
+      "target": "H&M_catalog_beauty_3",
+      "key": 183,
+      "relation": "lists"
+    }
+  ]
+}
