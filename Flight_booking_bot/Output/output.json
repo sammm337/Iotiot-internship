@@ -1,0 +1,13 @@
+{
+    "task_id": "task1",
+    "status": "success",
+    "message": "Ticket search completed successfully.",
+    "details": {
+        "origin": "New York",
+        "destination": "Los Angeles",
+        "departure_date": "2025-01-30",
+        "return_date": "2025-02-4",
+        "travel_class": "Economy",
+        "passenger_count": 1
+    }
+}
