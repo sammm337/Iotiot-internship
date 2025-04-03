@@ -1,0 +1,24 @@
+{
+    "questions": [
+        {
+            "Question": "Given an array of integers, find the maximum sum of a contiguous subarray.",
+            "Answer": "Use Kadane's Algorithm. Initialize max_so_far and max_ending_here to the first element. Iterate through the array, updating max_ending_here by adding the current element. If max_ending_here becomes negative, reset it to 0. If max_ending_here exceeds max_so_far, update max_so_far. Return max_so_far."
+        },
+        {
+            "Question": "Reverse a linked list.",
+            "Answer": "Iterative approach: Use three pointers - prev, curr, and next. Initialize prev to null. Iterate through the list, setting next to curr.next, then curr.next to prev, and finally updating prev and curr. Recursive approach: Base case: if head is null or head.next is null, return head. Recursively reverse the rest of the list, and then set the head.next.next to head, and head.next to null. Return the new head."
+        },
+        {
+            "Question": "Given a binary tree, perform a level order traversal.",
+            "Answer": "Use a queue. Enqueue the root. While the queue is not empty, dequeue an element, process it, and enqueue its children (if any)."
+        },
+        {
+            "Question": "Find the kth smallest element in an unsorted array.",
+            "Answer": "Use a min-heap. Build a min-heap from the array. Extract the minimum element k times. The last extracted element is the kth smallest."
+        },
+        {
+            "Question": "Given a string, determine if it is a palindrome.",
+            "Answer": "Two pointers approach: Initialize two pointers, one at the beginning and one at the end of the string. Compare the characters at both pointers. If they are different, it's not a palindrome. If they are the same, move pointers towards the center. If pointers cross, it's a palindrome."
+        }
+    ]
+}

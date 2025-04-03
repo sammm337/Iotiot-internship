@@ -1,0 +1,42 @@
+[
+    {
+        "repo_name": "DynamicProgramming",
+        "questions": [
+            {
+                "question": "Explain the difference between top-down and bottom-up approaches to dynamic programming. Can you provide an example of when you might choose one over the other in your LeetCode/GeeksforGeeks solutions?",
+                "answer": "Look for clear understanding of memoization (top-down) and tabulation (bottom-up). Candidate should discuss trade-offs related to recursion overhead and iterative solutions.  Examples from their repository demonstrate practical application.",
+                "type": "technical"
+            },
+            {
+                "question": "Describe a dynamic programming problem you found particularly challenging and how you approached solving it.  What were the key insights or optimizations you employed?",
+                "answer": "Evaluate problem-solving approach, including identifying optimal substructure and overlapping subproblems.  Look for specific examples of optimization techniques like space optimization or alternative algorithmic approaches.  Check if the described solution exists in their repository.",
+                "type": "technical"
+            },
+            {
+                "question": "Your resume mentions Java as a skill, but the repository primarily contains Python and C++ code. Could you elaborate on your experience with Java, and perhaps explain why it wasn't used in this particular project?",
+                "answer": "Assess candidate's Java experience level.  A plausible explanation could be project requirements or a conscious decision to focus on other languages.  Look for honesty and clarity in their response.",
+                "type": "discrepancy"
+            }
+        ]
+    },
+    {
+        "repo_name": "Test2",
+        "questions": [
+            {
+                "question": "Describe your experience working with JavaScript in the Test2 project. Can you elaborate on the specific functionalities you implemented using this language and any challenges you faced?",
+                "answer": "Look for specific examples of JavaScript usage within the project, such as DOM manipulation, event handling, or asynchronous operations. Assess the candidate's understanding of JavaScript concepts and their problem-solving approach.  The candidate should be able to articulate their contributions to the project and demonstrate a clear understanding of JavaScript's role in it.",
+                "type": "technical"
+            },
+            {
+                "question": "The repository primarily uses JavaScript, HTML, and CSS, which suggests a frontend focus. However, your resume mentions backend skills like Python, Node.js, and Docker, along with backend work on the project. Can you clarify the extent of your backend involvement and explain the technologies you employed?",
+                "answer": "Focus on verifying the candidate's backend experience. Probe for details on their specific contributions to the backend of the project. Assess their understanding of Python, Node.js, and Docker by asking follow-up questions related to these technologies.",
+                "type": "discrepancy"
+            },
+            {
+                "question": "The GitHub repository indicates only one commit. Can you explain the development process and the limited number of commits?",
+                "answer": "Assess the candidate's collaboration skills and the project's overall development workflow. If the candidate worked solo, inquire about their version control practices. If it was a team project, explore their contributions and the reasons for the low commit count.",
+                "type": "discrepancy"
+            }
+        ]
+    }
+]

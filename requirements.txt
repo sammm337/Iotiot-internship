@@ -1,0 +1,14 @@
+google-generativeai
+python-dotenv
+requests
+pymongo
+pathlib
+logging
+Pillow
+pytesseract
+pyautogui
+pynput
+PyMuPDF
+pdfplumber
+python-docx
+playwright
